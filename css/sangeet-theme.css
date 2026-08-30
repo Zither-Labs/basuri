@@ -1,0 +1,94 @@
+/*
+ * CANONICAL: shared/css/sangeet-theme.css
+ * Sync into each room (and hub) with: powershell -File shared/sync-to-rooms.ps1
+ * Audio Engines Owner — one product look across Sangeet Yatra.
+ *
+ * Default = practice parchment (singing / madal / tabla / piano interiors).
+ * Add class "theme-journey" on <html> or <body> for hub / room landing pages.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Parchment */
+  --bg: #fdf6e9;
+  --panel: #fffaf0;
+  --ink: #3d2b1f;
+  --muted: #7a6a58;
+  --terra: #b5451d;
+  --terra-soft: #c8663a;
+  --ochre: #d9a441;
+  --green: #5c7a4a;
+  --blue: #3a6ea5;
+  --line: #e7d8bf;
+  --shadow: 0 6px 24px rgba(90, 60, 30, 0.10);
+  --radius: 14px;
+
+  /* Aliases so older piano CSS (--accent / --warm) maps onto parchment */
+  --accent: #b5451d;
+  --accent-soft: #c8663a;
+  --warm: #d9a441;
+
+  /* Journey tokens (also available on parchment pages if needed) */
+  --mist: #e8f0ec;
+  --sand: #c4a574;
+  --leaf: #2f6b5a;
+  --leaf-deep: #1e463b;
+  --glow: #f0d9a8;
+
+  /* Occasional accents (piano quest CTA, etc.) */
+  --sun: #f0b429;
+  --sky: #3d8fd1;
+
+  --font-sans: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+a { color: var(--terra); }
+a:hover { color: var(--terra-soft); }
+
+h1, .brand-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* —— Journey / landing (hub + room homes) —— */
+html.theme-journey,
+html.theme-journey body,
+body.theme-journey {
+  --ink: #1a2e28;
+  --mist: #e8f0ec;
+  --sand: #c4a574;
+  --leaf: #2f6b5a;
+  --leaf-deep: #1e463b;
+  --glow: #f0d9a8;
+  --line: rgba(232, 240, 236, 0.12);
+  color: var(--mist);
+  background:
+    radial-gradient(ellipse 90% 70% at 15% 12%, rgba(47, 107, 90, 0.45), transparent 55%),
+    radial-gradient(ellipse 70% 60% at 90% 80%, rgba(196, 165, 116, 0.16), transparent 50%),
+    linear-gradient(165deg, #0c1814 0%, #152820 42%, #0a1411 100%);
+  min-height: 100vh;
+  line-height: 1.55;
+}
+
+html.theme-journey a,
+body.theme-journey a {
+  color: var(--glow);
+}
+html.theme-journey a:hover,
+body.theme-journey a:hover {
+  color: var(--sand);
+}

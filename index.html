@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-journey">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VSQ0M94L2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5VSQ0M94L2');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/sangeet-theme.css" />
+<script src="js/sangeet-paths.js"></script>
+<title>Learn Basuri — Bamboo flute for beginners</title>
+<style>
+  .hero {
+    min-height: 100vh; min-height: 100dvh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: clamp(28px, 6vw, 72px);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 10vw, 5.2rem);
+    font-weight: 600; line-height: 0.95; margin: 0 0 0.2em;
+    color: var(--glow);
+  }
+  .brand small {
+    display: block; font-family: var(--font-sans); font-size: 0.28em;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--sand);
+    margin-top: 0.55em; font-weight: 500;
+  }
+  .tag {
+    max-width: 34rem; font-size: clamp(1.05rem, 2.3vw, 1.25rem);
+    line-height: 1.55; color: rgba(238, 246, 242, 0.85); margin: 0 0 2rem;
+  }
+  .paths { display: flex; flex-wrap: wrap; gap: 16px; }
+  .path {
+    display: flex; flex-direction: column; gap: 6px;
+    min-width: 11rem; max-width: 18rem; flex: 1;
+    padding: 1.2rem 1.4rem; text-decoration: none; border-radius: 16px;
+    transition: transform 0.2s ease;
+  }
+  .path:hover { transform: translateY(-3px); }
+  .path strong { font-size: 1.35rem; font-weight: 800; }
+  .path span { font-size: 0.92rem; line-height: 1.4; opacity: 0.9; }
+  .path.theory {
+    background: var(--leaf); color: var(--mist);
+    box-shadow: 0 12px 32px rgba(42, 122, 98, 0.35);
+  }
+  .path.story {
+    background: var(--sand); color: #1a1208;
+    box-shadow: 0 12px 32px rgba(240, 217, 168, 0.28);
+  }
+  .appendix { margin-top: 1.5rem; max-width: 42rem; }
+  .appendix-label {
+    display: block; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--sand); font-weight: 700; margin: 0 0 0.6rem;
+  }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tab {
+    text-decoration: none; font-size: 0.9rem; font-weight: 700; color: var(--mist);
+    background: rgba(42, 122, 98, 0.22); border: 1px solid rgba(42, 122, 98, 0.55);
+    border-radius: 999px; padding: 7px 14px;
+  }
+  .tab:hover { background: rgba(42, 122, 98, 0.42); }
+  .foot {
+    margin-top: 2.5rem; font-size: 0.88rem; color: rgba(238, 246, 242, 0.45); line-height: 1.55;
+  }
+  .foot a { color: var(--sand); }
+  .sy-hub {
+    display: inline-block; font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--sand);
+    text-decoration: none; margin: 0 0 1rem;
+  }
+  .sy-hub:hover { color: var(--glow); }
+  .sy-rooms-foot { margin-top: 0.75rem; font-size: 0.88rem; }
+  .sy-rooms-foot a { color: var(--sand); text-decoration: none; }
+  .sy-rooms-foot a:hover { color: var(--glow); }
+  @media (max-width: 560px) {
+    .paths { flex-direction: column; }
+    .path { max-width: none; }
+  }
+</style>
+<link rel="stylesheet" href="css/sangeet-practice-bar.css" />
+</head>
+<body>
+  <main class="hero">
+    <a class="sy-hub" href="/">Sangeet Yatra</a>
+    <h1 class="brand">Learn Basuri<small>From breath to Sa</small></h1>
+    <p class="tag">Eastern bamboo flute for people who cannot get a sound yet.
+      Straw drills, embouchure, long tones, then swaras — plus the story of the murali.</p>
+    <div class="paths">
+      <a class="path theory" href="first-sound.html">
+        <strong>First sound</strong>
+        <span>Start here if you cannot blow a tone. Straw, kiss-and-roll, troubleshooting.</span>
+      </a>
+      <a class="path story" href="murali.html">
+        <strong>The murali</strong>
+        <span>Krishna’s flute in poetry and how it relates to the bansuri in your hands.</span>
+      </a>
+    </div>
+    <nav class="appendix" aria-label="Basuri path map">
+      <span class="appendix-label">Full beginner path</span>
+      <div class="tabs">
+        <a class="tab" href="choose.html">Choose</a>
+        <a class="tab" href="first-sound.html">First sound</a>
+        <a class="tab" href="hold.html">Hold</a>
+        <a class="tab" href="breath.html">Breath</a>
+        <a class="tab" href="swaras.html">Swaras</a>
+        <a class="tab" href="alankars.html">Alankars</a>
+        <a class="tab" href="murali.html">Murali</a>
+        <a class="tab" href="resources.html">Resources</a>
+      </div>
+    </nav>
+    <p class="foot">
+      Created by Bikash Acharya ·
+      <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
+      Markdown: <a href="README.md">README</a>
+    </p>
+    <p class="sy-rooms-foot">
+      <a href="/">Sangeet Yatra</a>
+      · <a href="/singing/">Singing</a>
+      · <a href="/piano/">Piano</a>
+      · <a href="/guitar/">Guitar</a>
+      · <a href="/basuri/">Basuri</a>
+      · <a href="/madal/">Madal</a>
+      · <a href="/tabla/">Tabla</a>
+    </p>
+  </main>
+<script src="js/sangeet-practice-bar.js"></script>
+<script>
+SangeetPracticeBar.init({
+  useTablaFallbackClicks: true,
+  persistSaKey: 'basuri-sa-midi',
+  toolbarLabel: 'Basuri practice controls'
+});
+</script>
+</body>
+</html>
