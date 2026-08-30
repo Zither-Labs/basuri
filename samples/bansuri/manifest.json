@@ -1,0 +1,27 @@
+{
+  "samples": [
+    { "file": "sa-lower-F4.mp3", "midi": 65, "role": "lower" },
+    { "file": "sa-oct-low-E4.mp3", "midi": 64, "role": "oct-low" },
+    { "file": "sa-middle-E5.mp3", "midi": 76, "role": "middle" },
+    { "file": "sa-oct-high-F5.mp3", "midi": 77, "role": "oct-high" },
+    { "file": "phrase-major-scale.mp3", "role": "phrase" },
+    { "file": "phrase-rag-jog.mp3", "role": "phrase" }
+  ],
+  "sources": [
+    {
+      "artist": "sankalp (Freesound)",
+      "license": "CC BY 4.0",
+      "urls": [
+        "https://freesound.org/people/sankalp/sounds/179695/",
+        "https://freesound.org/people/sankalp/sounds/179696/",
+        "https://freesound.org/people/sankalp/sounds/179694/",
+        "https://freesound.org/people/sankalp/sounds/179693/"
+      ]
+    },
+    {
+      "artist": "Ninad_P (Freesound)",
+      "license": "CC0 1.0",
+      "urls": ["https://freesound.org/people/Ninad_P/sounds/448458/"]
+    }
+  ]
+}

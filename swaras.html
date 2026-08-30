@@ -21,19 +21,25 @@
   <nav>
     <div class="brand">Learn Basuri<small>Bamboo flute</small></div>
     <h2>This page</h2>
-        <a href="#map">Note map</a>
+    <a href="#map">Note map</a>
     <a href="#chart">Fingering chart</a>
+    <a href="#vikrit">Komal &amp; tivra</a>
+    <a href="#ma">Ma vs Ma♯</a>
+    <a href="#high">High register &amp; alternates</a>
     <a href="#practice">Practice</a>
-    <a href="#sa-systems">About Sa</a>
+    <a href="#western">Western footnote</a>
     <a href="#next">Next</a>
     <h2>Start here</h2>
     <a href="choose.html">Choose a flute</a>
     <a href="first-sound.html">First sound</a>
+    <a href="routine.html">Practice routine</a>
     <a href="hold.html">Hold &amp; posture</a>
     <a href="breath.html">Breath &amp; long tones</a>
     <h2>Notes</h2>
     <a href="swaras.html">Swaras (Sa–Ni)</a>
-    <a href="alankars.html">Simple alankars</a>
+    <a href="listen.html">Listen (tuner)</a>
+    <a href="alankars.html">Alankars</a>
+    <a href="songs.html">Simple songs</a>
     <h2>Story</h2>
     <a href="murali.html">The murali</a>
     <h2>More</h2>
@@ -52,42 +58,194 @@
 
     <section id="map">
       <h1>Swaras (Sa–Ni)</h1>
-      <p class="lead">Once you can hold a tone, learn the seven swaras. On a common beginner <strong>C middle</strong> natural map, Sa is all holes closed; each higher swara opens one more hole from the bottom.</p>
+      <p class="lead">Once you can hold a tone, learn the seven swaras. On the Eastern bansuri,
+        <strong>Sa is the top three finger holes covered</strong> (nearest the blowing hole), with the
+        lower three open. That is the standard Hindustani teaching map — not “all holes closed.”</p>
     </section>
     <section id="chart">
-      <h2>Fingering chart (6-hole natural)</h2>
+      <h2>Fingering chart (6-hole · Sa = three covered)</h2>
       <div class="card">
-        <p>Holes left→right = upper (near embouchure) → lower. Filled = closed.</p>
+        <p>Holes left→right = upper (near embouchure) → lower. Filled = closed. “Top” means nearest the blowing hole.</p>
         <table class="fingering">
           <tr><th>Swar</th><th>Holes</th><th>Action</th></tr>
-          <tr><td>Sa</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>All closed</td></tr>
-          <tr><td>Re</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span></span></td><td>Open bottom</td></tr>
-          <tr><td>Ga</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Open bottom two</td></tr>
-          <tr><td>Ma</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Open bottom three</td></tr>
-          <tr><td>Pa</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Open bottom four</td></tr>
-          <tr><td>Dha</td><td><span class="holes"><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Open bottom five</td></tr>
-          <tr><td>Ni</td><td><span class="holes"><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>All open</td></tr>
-          <tr><td>Sa↑</td><td colspan="2">Upper octave later — tighter embouchure / overblow, not just louder air</td></tr>
+          <tr><td>Sa</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Top three closed</td></tr>
+          <tr><td>Re</td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Top two closed</td></tr>
+          <tr><td>Ga</td><td><span class="holes"><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Top hole only</td></tr>
+          <tr><td>Ma♯ <span style="font-weight:600;color:var(--muted)">(tivra)</span></td><td><span class="holes"><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>All open — or alt. top three open / bottom three closed (<code>000XXX</code>)</td></tr>
+          <tr><td>Ma <span style="font-weight:600;color:var(--muted)">(shuddha)</span></td><td colspan="2">Half-cover the top hole (between Ga and Ma♯) — see below</td></tr>
+          <tr><td>Pa <span style="font-weight:600;color:var(--muted)">(above Sa)</span></td><td><span class="holes"><span class="hole open"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>Alt. <code>0XXXXX</code> — top open, five closed (common teacher fingering)</td></tr>
+          <tr><td>Pa <span style="font-weight:600;color:var(--muted)">(above Sa · overblow)</span></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>All closed with faster air — same fingering as mandra Pa, higher partial</td></tr>
+          <tr><td>Pa <span style="font-weight:600;color:var(--muted)">(below Sa)</span></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>All closed, gentle air — <em>mandra</em> Pa under Sa</td></tr>
+          <tr><td>Dha <span style="font-weight:600;color:var(--muted)">(below / also above Pa*)</span></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span></span></td><td>Five closed (*with stronger air after all-closed Pa, this can be madhya Dha)</td></tr>
+          <tr><td>Ni <span style="font-weight:600;color:var(--muted)">(below / also above Pa*)</span></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Four closed (*same idea as Dha)</td></tr>
+          <tr><td>Sa↑</td><td colspan="2">Same fingering as Sa, tighter embouchure / faster air into the upper octave</td></tr>
         </table>
+        <p>First week: practice <strong>Sa–Re–Ga–Ma♯</strong> (three closed → two → one → all open). Add shuddha Ma, middle Pa, komal notes, and notes below Sa when the embouchure is steady.</p>
+        <div class="note tip" id="pa-fingering"><strong>Two ways to play Pa above Sa</strong> (both appear on the
+          <a href="https://www.bansuriflute.co.uk/p/beginners-how-to-play-bansuri.html" target="_blank" rel="noopener">bansuriflute.co.uk</a> chart):
+          <strong>(1)</strong> all six closed with faster air (overblow the mandra-Pa fingering), then open from the bottom for Dha / Ni;
+          <strong>(2)</strong> <code>0XXXXX</code> — vent the top hole, close the five below (your teacher’s fingering).
+          Beginners on that site are often told to <em>half</em>-open the top hole first. Always check a clean fifth against the Sa drone.</div>
       </div>
     </section>
+
+    <section id="vikrit">
+      <h2>Komal &amp; tivra (altered swaras)</h2>
+      <div class="card">
+        <p><strong>Shuddha</strong> = natural pitch. Two kinds of alteration:</p>
+        <ul>
+          <li><strong>Komal</strong> (“soft”) — flattened. Used on <strong>Re, Ga, Dha, Ni</strong>.</li>
+          <li><strong>Tivra</strong> (“sharp / intense”) — raised. Used only on <strong>Ma</strong>.</li>
+        </ul>
+        <p><strong>Sa</strong> and <strong>Pa</strong> never move. Match every altered note to the Sa drone — the ear is the final judge.</p>
+      </div>
+
+      <h3>Basuri — how to get the sound</h3>
+      <div class="card">
+        <p>Main tool: <strong>half-holing</strong>. Leave a slit of the hole open (often the lower half of the pad)
+          so the pitch sits between two full fingerings. Roll the finger slowly; tiny changes move pitch a lot.</p>
+        <p>Also useful on side-blown basuri:</p>
+        <ul>
+          <li><strong>Meend</strong> — slide from one fingering to the next by gradually uncovering; pass through the komal along the way.</li>
+          <li><strong>Embouchure</strong> — roll the flute slightly in/out or soften the air to fine-tune after the finger is close.</li>
+        </ul>
+        <table class="fingering">
+          <tr><th>Altered swar</th><th>Between</th><th>Typical half-hole (6-hole · this map)</th></tr>
+          <tr><td>komal Re</td><td>Sa → Re</td><td>Top three mostly closed; crack open the <em>3rd</em> hole</td></tr>
+          <tr><td>komal Ga</td><td>Re → Ga</td><td>Top two mostly closed; crack open the <em>2nd</em> hole</td></tr>
+          <tr><td>shuddha Ma</td><td>Ga → Ma♯</td><td>Crack open / half-cover the <em>top</em> hole (see Ma section)</td></tr>
+          <tr><td>tivra Ma</td><td>—</td><td><strong>All open</strong> (full fingering, not a half-hole)</td></tr>
+          <tr><td>komal Dha (below)</td><td>Pa → Dha</td><td>Five mostly closed; crack open the <em>bottom</em> hole</td></tr>
+          <tr><td>komal Ni (below)</td><td>Dha → Ni</td><td>Four mostly closed; crack open the <em>5th</em> hole</td></tr>
+        </table>
+        <p>Same idea in the upper octave: keep the half-hole, use a bit more focused air for Sa↑ and friends.</p>
+      </div>
+      <div class="note tip">Start with <strong>komal Re</strong> only: drone Sa, play Sa → half-open 3rd hole → full Re → back.
+        When that slot is stable, add komal Ga the same way.</div>
+
+      <h3>Murali (end-blown) — same idea, less bend</h3>
+      <div class="card">
+        <p>On a recorder-like murali you still half-hole for komal notes and for shuddha Ma.
+          Tivra Ma is still the fully open (or next full) fingering on that tube’s map.</p>
+        <ul>
+          <li>The fipple aims the air for you, so <strong>embouchure bends are weaker</strong> than on basuri — rely more on careful half-cover %.</li>
+          <li>Soft, steady breath; blasting sharpens and can jump octave instead of giving a clean komal.</li>
+          <li>Hole spacing on folk/toy muralis is uneven. Use the <a href="murali.html#vikrit">murali page</a> notes and tune to the drone, not only to a printed chart.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ma">
+      <h2>Ma vs Ma♯ (tivra Ma)</h2>
+      <div class="card">
+        <p>In Indian music, <strong>Ma</strong> (madhyam) is the only swara that can be raised (sharpened). The others that change are flattened (<em>komal</em> Re, Ga, Dha, Ni). Sa and Pa never move.</p>
+        <ul>
+          <li><strong>Shuddha Ma</strong> (“plain Ma”) — the natural fourth above Sa (like F if Sa were C). On bansuri it is usually a <strong>half-hole</strong> on the top finger hole: between Ga (one hole closed) and all-open.</li>
+          <li><strong>Tivra Ma / Ma♯</strong> — the raised fourth (like F♯ if Sa were C). Usual fingering: <strong>all holes open</strong>.
+            Alternate on the bansuriflute.co.uk chart: <strong>top three open, bottom three closed</strong> (<code>000XXX</code>). Many ragas (e.g. Yaman) use tivra Ma.</li>
+        </ul>
+        <p>Shop charts that write <strong>Ma#</strong> mean tivra Ma, not “play a Western sharp key.” If a lesson just says “Ma” without <em>tivra</em> / <em>shuddha</em>, ask which one — or match the raga.</p>
+      </div>
+      <div class="note tip">Beginners often learn all-open as the first “Ma” because half-holing is harder. That note is tivra Ma (Ma♯). Add shuddha Ma later with slow half-cover practice.</div>
+    </section>
+
+    <section id="high">
+      <h2>High register &amp; alternate fingerings</h2>
+      <p class="lead">Primary map below follows the 6-hole chart on
+        <a href="https://www.bansuriflute.co.uk/p/beginners-how-to-play-bansuri.html" target="_blank" rel="noopener">bansuriflute.co.uk — beginners</a>
+        (Sa = top three closed). Faster, narrower air for higher octaves — not just louder blowing.</p>
+
+      <div class="card">
+        <h3>Notation</h3>
+        <ul>
+          <li><strong>,P ,D ,N</strong> or dot below — mandra (lower) saptak</li>
+          <li><strong>S R G M P D N</strong> — madhya (middle)</li>
+          <li><strong>S' R' …</strong> or one dot above — taar (upper)</li>
+          <li><strong>S''</strong> or two dots above — ati-taar (very high Sa)</li>
+          <li>Code <strong>0</strong> = open · <strong>X</strong> = closed · left→right = top hole (near blow) → bottom</li>
+        </ul>
+        <div class="note tip">That site’s tip for high notes: think of a garden hose — same air volume, smaller opening → faster stream.
+          Soft high tone is the goal. Exact top-register response still varies by bamboo.</div>
+      </div>
+
+      <h3>Full chart (bansuriflute.co.uk style)</h3>
+      <div class="card">
+        <table class="fingering">
+          <tr><th>Swar</th><th>Code</th><th>Holes</th><th>Interval / note</th></tr>
+          <tr><td>,P</td><td><code>XXXXXX</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>mandra Pa · perfect 5th below Sa</td></tr>
+          <tr><td>,D</td><td><code>XXXXXO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span></span></td><td>mandra Dha · major 6th below</td></tr>
+          <tr><td>,N</td><td><code>XXXXOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>mandra Ni · major 7th below</td></tr>
+          <tr><td>S</td><td><code>XXXOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Sa · tonic</td></tr>
+          <tr><td>R</td><td><code>XXOOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Re · major 2nd</td></tr>
+          <tr><td>G</td><td><code>XOOOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>Ga · major 3rd</td></tr>
+          <tr><td>M♯</td><td><code>000000</code></td><td><span class="holes"><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>tivra Ma · aug. 4th</td></tr>
+          <tr><td>M♯ <span style="font-weight:600;color:var(--muted)">(alt.)</span></td><td><code>000XXX</code></td><td><span class="holes"><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>top three open, bottom three closed</td></tr>
+          <tr><td>P</td><td><code>XXXXXX</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>madhya Pa · overblow all-closed</td></tr>
+          <tr><td>P <span style="font-weight:600;color:var(--muted)">(alt.)</span></td><td><code>0XXXXX</code></td><td><span class="holes"><span class="hole open"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>first hole open — teacher favourite; or half-open top</td></tr>
+          <tr><td>D</td><td><code>XXXXXO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span></span></td><td>madhya Dha (stronger air after all-closed Pa)</td></tr>
+          <tr><td>N</td><td><code>XXXXOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>madhya Ni</td></tr>
+          <tr><td>S'</td><td><code>XXXOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>taar Sa · overblow</td></tr>
+          <tr><td>R'</td><td><code>XXOOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>taar Re · overblow</td></tr>
+          <tr><td>G'</td><td><code>XOOOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>taar Ga · overblow</td></tr>
+          <tr><td>M♯'</td><td><code>000000</code></td><td><span class="holes"><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>taar tivra Ma · overblow</td></tr>
+          <tr><td>P'</td><td><code>0XXXXX</code></td><td><span class="holes"><span class="hole open"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span><span class="hole closed"></span></span></td><td>taar Pa · first open / five closed</td></tr>
+          <tr><td>D'</td><td><code>XXOOOX</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span><span class="hole closed"></span></span></td><td>taar Dha · holes 1, 2, 6 closed</td></tr>
+          <tr><td>N'</td><td><code>XXOXOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>taar Ni · holes 1, 2, 4 closed</td></tr>
+          <tr><td>S''</td><td><code>XOXOOO</code></td><td><span class="holes"><span class="hole closed"></span><span class="hole open"></span><span class="hole closed"></span><span class="hole open"></span><span class="hole open"></span><span class="hole open"></span></span></td><td>ati-taar Sa · holes 1 and 3 closed</td></tr>
+        </table>
+        <p>Shuddha Ma (natural 4th) is not a full-hole row on that chart — half-cover the top hole between Ga and tivra Ma (see <a href="#ma">Ma vs Ma♯</a>).</p>
+      </div>
+
+      <h3>Other teachers’ high forks (optional)</h3>
+      <div class="card">
+        <p>If your guru’s sheet differs, keep theirs. These also appear in teaching circles:</p>
+        <ul>
+          <li>Dha'' · <code>XX000X</code> (close 1–2 and 6 with three open in the middle — close cousin of <code>XXOOOX</code>)</li>
+          <li>Ni'' · <code>X0XXXX</code> or <code>XXXX0X</code></li>
+          <li>Re' alt. · <code>XX0XXX</code> · Ga' alt. · <code>X00XXX</code></li>
+        </ul>
+        <p>Tune every option to the drone; keep the fingering that speaks cleanly on <em>your</em> flute.</p>
+      </div>
+
+      <h3>How to practise</h3>
+      <ol class="steps">
+        <li>Drone Sa. Climb ,P ,D ,N S R G M♯ with long tones.</li>
+        <li>Lock madhya Pa both ways: overblown <code>XXXXXX</code> and <code>0XXXXX</code> (or half-open top).</li>
+        <li>Continue D N S' with stronger, smaller embouchure.</li>
+        <li>Add P' (<code>0XXXXX</code>), then D' (<code>XXOOOX</code>), N' (<code>XXOXOO</code>), S'' (<code>XOXOOO</code>).</li>
+        <li>One new high note per week. Soft tone beats loud squeak.</li>
+      </ol>
+      <div class="note tip">Murali (end-blown) rarely needs this chart — these fingerings are for side-blown basuri / bansuri.</div>
+    </section>
+
     <section id="practice">
       <h2>Practice</h2>
       <ol class="steps">
-        <li>Drone Sa on the practice bar.</li>
-        <li>Hold Sa, then Re, back to Sa.</li>
-        <li>Add Ga and Ma — always return to Sa to check pitch.</li>
-        <li>Climb to Ni only when each step is clear.</li>
+        <li>Drone Sa on the practice bar; finger Sa (top three closed) until it matches.</li>
+        <li>Sa → Re → Sa, then add Ga.</li>
+        <li>All open = Ma♯; return to Sa to check pitch.</li>
+        <li>Optional: all closed = Pa below Sa — useful, but not your tonic.</li>
+        <li>When ready: Sa → komal Re (half-open 3rd) → Re; then try komal Ga and shuddha Ma the same slow way.</li>
+        <li>Later: middle Pa (overblow all-closed or <code>0XXXXX</code>), then the <a href="#high">full high-register chart</a>.</li>
       </ol>
     </section>
-    <section id="sa-systems">
-      <h2>About Sa</h2>
-      <div class="note">Some systems set Sa with only the <strong>top three</strong> holes closed. Pick one system for your flute and stay consistent. This page uses all-closed = Sa because it matches many first-week C-flute tutorials.</div>
+    <section id="western">
+      <h2>Footnote: Western flute / “C flute” charts</h2>
+      <div class="note">
+        <p>Many beginner web tutorials (especially “C natural middle” shop guides) treat
+          <strong>all six holes closed as Sa</strong> and open holes upward from the bottom.
+          That matches a <strong>Western</strong> habit: the lowest tube note is “do” / the named key of the flute.</p>
+        <p>Eastern classical bansuri teaching usually sets <strong>Sa at three holes covered</strong>
+          so you also have Pa–Dha–Ni <em>below</em> Sa without changing octave. Same bamboo — different tonic choice.</p>
+        <p>If your maker labels the flute “C,” that letter often names a Western pitch (sometimes the all-closed note).
+          Still put the practice-bar drone on <em>your</em> three-hole Sa and train the ear to that.</p>
+      </div>
     </section>
     <section id="next">
       <h2>Next</h2>
       <div class="row">
         <a class="btn nav" href="alankars.html">Simple alankars</a>
+        <a class="btn ghost" href="ladder.html">Finger ladder</a>
         <a class="btn ghost" href="murali.html">The murali</a>
       </div>
     </section>
@@ -95,9 +253,11 @@
     <footer>
       Created by Bikash Acharya ·
       <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
-      Pedagogy distilled from free bansuri tutorials (Radhe Flutes, bansuriflute.co.uk, bansuri.com,
-      chandrakantha.com) — see <a href="resources.html">Resources</a>. Practice with the Sa drone below
-      (same bar as Singing).<br />
+      Pedagogy distilled from free bansuri tutorials — especially
+      <a href="https://www.bansuriflute.co.uk/p/beginners-how-to-play-bansuri.html" target="_blank" rel="noopener">bansuriflute.co.uk</a>
+      (fingering chart across octaves), plus Radhe Flutes, bansuri.com, chandrakantha.com —
+      see <a href="resources.html">Resources</a>.
+      Practice with the Sa drone below (same bar as Singing).<br />
       Markdown: <a href="swaras.md">swaras.md</a>
       <p class="sy-rooms-foot">
         <a href="/">Sangeet Yatra</a>

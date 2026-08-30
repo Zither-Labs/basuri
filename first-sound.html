@@ -35,7 +35,10 @@
     <a href="breath.html">Breath &amp; long tones</a>
     <h2>Notes</h2>
     <a href="swaras.html">Swaras (Sa–Ni)</a>
-    <a href="alankars.html">Simple alankars</a>
+    <a href="ladder.html">Finger ladder</a>
+    <a href="listen.html">Listen (tuner)</a>
+    <a href="alankars.html">Alankars</a>
+    <a href="songs.html">Simple songs</a>
     <h2>Story</h2>
     <a href="murali.html">The murali</a>
     <h2>More</h2>
@@ -56,6 +59,15 @@
       <h1>First sound</h1>
       <p class="lead">If you cannot get a tone yet, you are normal. It can take days or weeks of short daily tries before the embouchure clicks. No shortcuts — only calm experiments.</p>
       <div class="note warn">Do <strong>not</strong> blow harder when nothing comes out. Harder air makes hiss, not music. Softer and more focused wins.</div>
+      <div class="card play-card" style="margin-top:14px">
+        <p class="hint">Hear a real bansuri long tone at your Sa, then hunt that colour. Full plan:
+          <a href="routine.html">practice routine</a>.</p>
+        <div class="actions">
+          <button type="button" class="btn" id="fs-play-sa">Play Sa target</button>
+          <button type="button" class="btn ghost" data-phrase="rag-jog">Hear a real phrase</button>
+          <button type="button" class="btn stop" data-stop>Stop</button>
+        </div>
+      </div>
     </section>
     <section id="no-flute">
       <h2>Warm up without the flute</h2>
@@ -117,6 +129,7 @@
       <h2>Next</h2>
       <div class="row">
         <a class="btn nav" href="hold.html">Secure the hold</a>
+        <a class="btn ghost" href="routine.html">Practice routine</a>
         <a class="btn ghost" href="breath.html">Breath &amp; long tones</a>
       </div>
     </section>
@@ -125,8 +138,9 @@
       Created by Bikash Acharya ·
       <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
       Pedagogy distilled from free bansuri tutorials (Radhe Flutes, bansuriflute.co.uk, bansuri.com,
-      chandrakantha.com) — see <a href="resources.html">Resources</a>. Practice with the Sa drone below
-      (same bar as Singing).<br />
+      chandrakantha.com) — see <a href="resources.html">Resources</a>.
+      Bansuri samples: <a href="samples/bansuri/CREDITS.md">CREDITS</a>.
+      Practice with the Sa drone below (same bar as Singing).<br />
       Markdown: <a href="first-sound.md">first-sound.md</a>
       <p class="sy-rooms-foot">
         <a href="/">Sangeet Yatra</a>
@@ -142,11 +156,20 @@
 </div>
 <script src="js/sangeet-mobile-nav.js"></script>
 <script src="js/sangeet-practice-bar.js"></script>
+<script src="js/basuri-core.js"></script>
 <script>
 SangeetPracticeBar.init({
   useTablaFallbackClicks: true,
   persistSaKey: 'basuri-sa-midi',
   toolbarLabel: 'Basuri practice controls'
+});
+document.getElementById('fs-play-sa').addEventListener('click', function () {
+  BasuriCore.playSwar('S', 1800);
+});
+document.addEventListener('click', function (ev) {
+  var t = ev.target;
+  if (t.matches('[data-stop]')) BasuriCore.stopAll();
+  if (t.matches('[data-phrase]')) BasuriCore.playPhrase(t.getAttribute('data-phrase'));
 });
 </script>
 </body>

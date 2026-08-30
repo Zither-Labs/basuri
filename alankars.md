@@ -1,33 +1,41 @@
-# Learn Basuri — Simple alankars
+# Learn Basuri — Alankars
 
-# Simple alankars
+Alankars are short note patterns that train fingers and breath together.
+Press **Play** on the [HTML page](alankars.html) to hear **real bansuri** samples pitched to your Sa.
 
-      Alankars are short note patterns that train fingers and breath together.
+**M** = tivra Ma (all open). **m** = shuddha Ma (half-hole). Komal = **r g d n**.
 
-    
-    
-      ## Start here (slow)
+## Hear a real bansuri
 
-      
-        
-          - Sa Re Ga Re Sa
+- Major-scale phrase (sankalp, CC BY)
+- Rag Jog snippet (Ninad_P, CC0)
 
-          - Re Ga Ma Ga Re
+## Easy (Sa–Re–Ga–M)
 
-          - Ga Ma Pa Ma Ga
+1. S R G R S
+2. S R S R S
+3. R G M G R
+4. S R G M G R S
+5. S R G M · M G R S
 
-          - Ma Pa Dha Pa Ma
+## With Pa
 
-          - Sa Re Ga Ma Pa Dha Ni Sa — then reverse down
+6. S R G M P M G R S
+7. G M P M G
+8. S G M P · P M G S
+9. ,P ,D ,N S · S ,N ,D ,P
 
-        
-        Clarity beats speed. Add the metronome only after the fingers know the path.
+## Komal taste
 
-      
-    
-    
-      ## Next
+10. S r R r S
+11. R g G g R
+12. S R G m M G R S
 
-      
-        More resources
-        The murali
+## Tips
+
+1. Drone Sa; match three-hole Sa.
+2. Play sample once; echo on flute.
+3. Clarity before metronome.
+4. High Pa / Dha / Ni forks: [high register & alternates](swaras.html#high).
+
+[Simple songs](songs.html) · [Practice routine](routine.html)

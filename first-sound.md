@@ -5,6 +5,9 @@
       If you cannot get a tone yet, you are normal. It can take days or weeks of short daily tries before the embouchure clicks. No shortcuts — only calm experiments.
 
       Do **not** blow harder when nothing comes out. Harder air makes hiss, not music. Softer and more focused wins.
+
+Hear a real bansuri long tone at your Sa on [first-sound.html](first-sound.html), then hunt that colour.
+Full plan: [practice routine](routine.html).
     
     
       ## Warm up without the flute

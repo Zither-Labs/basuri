@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VSQ0M94L2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5VSQ0M94L2');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/sangeet-theme.css" />
+<link rel="stylesheet" href="css/sangeet-practice-bar.css" />
+<link rel="stylesheet" href="css/shared.css" />
+<script src="js/sangeet-paths.js"></script>
+<title>Learn Basuri — Listen (note detector)</title>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand">Learn Basuri<small>Bamboo flute</small></div>
+    <h2>This page</h2>
+    <a href="#how">How</a>
+    <a href="#meter">Meter</a>
+    <a href="#tips">Tips</a>
+    <a href="#next">Next</a>
+    <h2>Start here</h2>
+    <a href="choose.html">Choose a flute</a>
+    <a href="first-sound.html">First sound</a>
+    <a href="routine.html">Practice routine</a>
+    <a href="hold.html">Hold &amp; posture</a>
+    <a href="breath.html">Breath &amp; long tones</a>
+    <h2>Notes</h2>
+    <a href="swaras.html">Swaras (Sa–Ni)</a>
+    <a href="ladder.html">Finger ladder</a>
+    <a href="listen.html">Listen (tuner)</a>
+    <a href="alankars.html">Alankars</a>
+    <a href="songs.html">Simple songs</a>
+    <h2>Story</h2>
+    <a href="murali.html">The murali</a>
+    <h2>More</h2>
+    <a href="resources.html">Resources</a>
+    <a href="index.html">Home</a>
+    <h2>Rooms</h2>
+    <a href="/" class="sub">Sangeet Yatra</a>
+    <a href="/singing/" class="sub">Singing</a>
+    <a href="/piano/" class="sub">Piano</a>
+    <a href="/guitar/" class="sub">Guitar</a>
+    <a href="/basuri/" class="sub">Basuri</a>
+    <a href="/madal/" class="sub">Madal</a>
+    <a href="/tabla/" class="sub">Tabla</a>
+  </nav>
+  <main>
+
+    <section id="how">
+      <h1>Listen — what note am I playing?</h1>
+      <p class="lead">Hold a steady tone on your basuri. This page listens through your microphone and
+        shows <strong>frequency (Hz)</strong>, Western pitch, and the <strong>swara relative to your Sa</strong>
+        (practice bar below).</p>
+      <div class="note tip">Set Sa on the bar to match your <em>three-hole Sa</em> first — or play Sa and press
+        <strong>Use heard pitch as Sa</strong>.</div>
+    </section>
+
+    <section id="meter">
+      <div class="card tuner-card">
+        <div class="tuner-actions">
+          <button type="button" class="btn" id="micBtn">Enable microphone</button>
+          <label class="tuner-mode">Mic
+            <select id="micMode">
+              <option value="laptop">Laptop / room</option>
+              <option value="headphones">Headset mic</option>
+              <option value="speakers">Speakers nearby</option>
+            </select>
+          </label>
+          <button type="button" class="btn ghost" id="setSaBtn" disabled>Use heard pitch as Sa</button>
+        </div>
+        <p class="hint" id="micWarn">Browser will ask for mic permission. Use Chrome/Edge/Safari on HTTPS or localhost.</p>
+
+        <div class="tuner-readout" aria-live="polite">
+          <div class="tuner-swar" id="swarLabel">—</div>
+          <div class="tuner-name" id="swarName">Waiting for a steady tone…</div>
+          <div class="tuner-hz" id="hzLabel">— Hz</div>
+          <div class="tuner-west" id="westLabel">Western: —</div>
+        </div>
+
+        <div class="cents-meter" aria-hidden="true">
+          <div class="cents-track">
+            <span class="cents-mark left">−50¢</span>
+            <span class="cents-mark mid">0</span>
+            <span class="cents-mark right">+50¢</span>
+            <div class="cents-needle" id="centsNeedle"></div>
+          </div>
+          <div class="cents-value" id="centsLabel">cents to nearest swara: —</div>
+        </div>
+
+        <div class="tuner-meta">
+          <span>Clarity: <strong id="clarityLabel">—</strong></span>
+          <span>Your Sa: <strong id="saRefLabel">—</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Tips</h2>
+      <ol class="steps">
+        <li>Quiet room helps. Point the mic toward the embouchure, not the foot of the flute.</li>
+        <li>Hold one note 2–3 seconds — the detector needs a stable tone (not meend while reading).</li>
+        <li>Air noise alone will not lock; keep seeking a clear pitch under the hiss.</li>
+        <li>Komal / tivra names assume equal-tempered steps from Sa (good for practice; raga shruti may sit slightly differently).</li>
+        <li>Turn the drone off if it confuses the mic; or use headphones for the drone.</li>
+      </ol>
+    </section>
+
+    <section id="next">
+      <h2>Next</h2>
+      <div class="row">
+        <a class="btn nav" href="swaras.html">Swaras &amp; fingerings</a>
+        <a class="btn ghost" href="first-sound.html">First sound</a>
+        <a class="btn ghost" href="alankars.html">Alankars</a>
+      </div>
+    </section>
+
+    <footer>
+      Created by Bikash Acharya ·
+      <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
+      Pitch detector uses a YIN-style analyzer in the browser (no audio leaves your device).
+      Markdown: <a href="listen.md">listen.md</a>
+      <p class="sy-rooms-foot">
+        <a href="/">Sangeet Yatra</a>
+        · <a href="/singing/">Singing</a>
+        · <a href="/piano/">Piano</a>
+        · <a href="/guitar/">Guitar</a>
+        · <a href="/basuri/">Basuri</a>
+        · <a href="/madal/">Madal</a>
+        · <a href="/tabla/">Tabla</a>
+      </p>
+    </footer>
+  </main>
+</div>
+<script src="js/sangeet-mobile-nav.js"></script>
+<script src="js/sangeet-practice-bar.js"></script>
+<script src="js/basuri-tuner.js"></script>
+<script>
+SangeetPracticeBar.init({
+  useTablaFallbackClicks: true,
+  persistSaKey: 'basuri-sa-midi',
+  toolbarLabel: 'Basuri practice controls'
+});
+
+(function () {
+  var micBtn = document.getElementById('micBtn');
+  var setSaBtn = document.getElementById('setSaBtn');
+  var micMode = document.getElementById('micMode');
+  var micWarn = document.getElementById('micWarn');
+
+  function refreshSaRef() {
+    var midi = BasuriTuner.getSaMidi();
+    document.getElementById('saRefLabel').textContent =
+      BasuriTuner.midiToName(midi) + ' · ' + BasuriTuner.midiToHz(midi).toFixed(1) + ' Hz';
+  }
+
+  micBtn.addEventListener('click', async function () {
+    if (BasuriTuner.isOn()) {
+      BasuriTuner.disableMic();
+      micBtn.textContent = 'Enable microphone';
+      micBtn.classList.remove('live');
+      micWarn.style.display = '';
+      setSaBtn.disabled = true;
+      return;
+    }
+    BasuriTuner.setProfile(micMode.value);
+    var ok = await BasuriTuner.enableMic();
+    if (ok) {
+      micBtn.textContent = 'Mic on — tap to stop';
+      micBtn.classList.add('live');
+      micWarn.style.display = 'none';
+    }
+  });
+
+  micMode.addEventListener('change', async function () {
+    BasuriTuner.setProfile(micMode.value);
+    if (BasuriTuner.isOn()) {
+      BasuriTuner.disableMic();
+      await BasuriTuner.enableMic();
+      micBtn.textContent = 'Mic on — tap to stop';
+      micBtn.classList.add('live');
+    }
+  });
+
+  setSaBtn.addEventListener('click', function () {
+    if (BasuriTuner.setSaFromHearing()) {
+      refreshSaRef();
+      setSaBtn.textContent = 'Sa updated';
+      setTimeout(function () { setSaBtn.textContent = 'Use heard pitch as Sa'; }, 1200);
+    }
+  });
+
+  var saSelect = document.getElementById('sa-select');
+  if (saSelect) saSelect.addEventListener('change', refreshSaRef);
+  refreshSaRef();
+
+  function paint() {
+    var r = BasuriTuner.get();
+    var swarEl = document.getElementById('swarLabel');
+    var nameEl = document.getElementById('swarName');
+    var hzEl = document.getElementById('hzLabel');
+    var westEl = document.getElementById('westLabel');
+    var centsEl = document.getElementById('centsLabel');
+    var needle = document.getElementById('centsNeedle');
+    var clarityEl = document.getElementById('clarityLabel');
+
+    if (!r.on) {
+      swarEl.textContent = '—';
+      nameEl.textContent = 'Microphone off';
+      hzEl.textContent = '— Hz';
+      westEl.textContent = 'Western: —';
+      centsEl.textContent = 'cents to nearest swara: —';
+      needle.style.left = '50%';
+      needle.classList.remove('in-tune', 'hearing');
+      clarityEl.textContent = '—';
+      setSaBtn.disabled = true;
+    } else if (!r.hearing || !r.swar) {
+      swarEl.textContent = '…';
+      nameEl.textContent = 'Listening — hold a steady tone';
+      hzEl.textContent = '— Hz';
+      westEl.textContent = 'Western: —';
+      centsEl.textContent = 'cents to nearest swara: —';
+      needle.style.left = '50%';
+      needle.classList.remove('in-tune');
+      needle.classList.add('hearing');
+      clarityEl.textContent = r.clarity > 0.05 ? Math.round(r.clarity * 100) + '%' : '—';
+      setSaBtn.disabled = true;
+    } else {
+      var s = r.swar;
+      swarEl.textContent = s.label;
+      nameEl.textContent = s.name;
+      hzEl.textContent = r.hz.toFixed(1) + ' Hz';
+      westEl.textContent = 'Western: ' + r.western + ' · MIDI ' + r.midi.toFixed(1);
+      centsEl.textContent = 'cents to nearest swara: ' + (s.cents >= 0 ? '+' : '') + s.cents;
+      var pct = 50 + Math.max(-50, Math.min(50, s.cents));
+      needle.style.left = pct + '%';
+      needle.classList.add('hearing');
+      needle.classList.toggle('in-tune', Math.abs(s.cents) <= 12);
+      clarityEl.textContent = Math.round(r.clarity * 100) + '%';
+      setSaBtn.disabled = false;
+    }
+    requestAnimationFrame(paint);
+  }
+  paint();
+})();
+</script>
+</body>
+</html>

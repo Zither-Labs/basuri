@@ -7,14 +7,11 @@
       
         
           - [Choose a flute](choose.html)
-
           - [First sound](first-sound.html) (straw + kiss-and-roll)
-
+          - [Practice routine](routine.html) (daily plan + real bansuri target tone)
           - [Hold](hold.html) → [long tones](breath.html)
-
-          - [Swaras](swaras.html) → [alankars](alankars.html)
-
-          - [Murali](murali.html) for context and inspiration
+          - [Swaras](swaras.html) → [finger ladder](ladder.html) → [listen (tuner)](listen.html) → [alankars](alankars.html) → [songs](songs.html)
+          - [Murali](murali.html) — end-blown (recorder-like) vs side-blown basuri
 
         
       
@@ -30,11 +27,13 @@
 
           - bansuri.com — Start Here (kiss-and-roll embouchure)
 
-          - bansuriflute.co.uk — beginners (patience + embouchure detail)
+          - bansuriflute.co.uk — beginners (patience, embouchure, full 6-hole fingering chart across octaves — primary map for this room’s high register)
 
           - chandrakantha.com — bansuri &amp; venu (instrument background)
 
           - Wikipedia — Bansuri (overview, regional names including murali)
+          - Sound of Bansuri — finger chart (incl. special high-octave fingerings)
+          - Anubodh — interactive fingering chart (3rd-octave positions vary by flute)
 
         
       

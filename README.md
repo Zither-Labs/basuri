@@ -12,14 +12,23 @@ in the same Sangeet Yatra style as Piano, Guitar, and Singing.
 | [index](index.html) | Landing — first sound + murali |
 | [choose](choose.html) | Picking a starter flute |
 | [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
+| [routine](routine.html) | Daily practice plan + target-tone playback |
 | [hold](hold.html) | Posture and hands |
 | [breath](breath.html) | Long tones |
-| [swaras](swaras.html) | Sa–Ni fingering (6-hole natural map) |
-| [alankars](alankars.html) | First patterns |
-| [murali](murali.html) | Krishna’s murali, names, vs bansuri |
+| [swaras](swaras.html) | Sa–Ni map, komal / tivra, high-register alternates |
+| [ladder](ladder.html) | One-finger drills · Sa→Re→Ga→Ma · Pa bridge |
+| [listen](listen.html) | Mic tuner — Hz, Western note, swara vs your Sa |
+| [alankars](alankars.html) | Patterns with real bansuri playback |
+| [songs](songs.html) | Simple sargam tunes with playback |
+| [murali](murali.html) | End-blown bamboo (recorder-like) vs side-blown basuri |
 | [resources](resources.html) | Curated free tutors |
 
 Each HTML page has a Markdown twin.
+
+## Audio
+
+Real bansuri long tones + phrases in `samples/bansuri/` (see [CREDITS](samples/bansuri/CREDITS.md)).
+Playback engine: `js/basuri-core.js` (pitch-shifts samples to the practice-bar Sa).
 
 ## Shared assets
 

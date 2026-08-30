@@ -6,3 +6,4 @@ desktop.ini
 **/.venv/
 **/venv/
 .cursor/
+samples/bansuri/_raw/

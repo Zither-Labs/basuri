@@ -14,24 +14,32 @@
 <link rel="stylesheet" href="css/sangeet-practice-bar.css" />
 <link rel="stylesheet" href="css/shared.css" />
 <script src="js/sangeet-paths.js"></script>
-<title>Learn Basuri — Simple alankars</title>
+<title>Learn Basuri — Alankars</title>
 </head>
 <body>
 <div class="wrap">
   <nav>
     <div class="brand">Learn Basuri<small>Bamboo flute</small></div>
     <h2>This page</h2>
-        <a href="#what">What</a>
-    <a href="#patterns">Patterns</a>
+    <a href="#what">What</a>
+    <a href="#listen">Hear bansuri</a>
+    <a href="#easy">Easy</a>
+    <a href="#pa">With Pa</a>
+    <a href="#komal">Komal taste</a>
+    <a href="#tips">Tips</a>
     <a href="#next">Next</a>
     <h2>Start here</h2>
     <a href="choose.html">Choose a flute</a>
     <a href="first-sound.html">First sound</a>
+    <a href="routine.html">Practice routine</a>
     <a href="hold.html">Hold &amp; posture</a>
     <a href="breath.html">Breath &amp; long tones</a>
     <h2>Notes</h2>
     <a href="swaras.html">Swaras (Sa–Ni)</a>
-    <a href="alankars.html">Simple alankars</a>
+    <a href="ladder.html">Finger ladder</a>
+    <a href="listen.html">Listen (tuner)</a>
+    <a href="alankars.html">Alankars</a>
+    <a href="songs.html">Simple songs</a>
     <h2>Story</h2>
     <a href="murali.html">The murali</a>
     <h2>More</h2>
@@ -49,37 +57,177 @@
   <main>
 
     <section id="what">
-      <h1>Simple alankars</h1>
-      <p class="lead">Alankars are short note patterns that train fingers and breath together.</p>
+      <h1>Alankars with playback</h1>
+      <p class="lead">Short note patterns for fingers and breath. Press <strong>Play</strong> to hear a
+        <em>real bansuri</em> sample pitched to your Sa (practice bar below). Then echo on your flute.</p>
+      <div class="note tip"><strong>M</strong> in early patterns = <strong>tivra Ma</strong> (all holes open).
+        Shuddha Ma is written <strong>m</strong>. Komal notes use lowercase <strong>r g d n</strong>.
+        See <a href="swaras.html#vikrit">komal &amp; tivra</a>.
+        High Pa / Dha / Ni forks: <a href="swaras.html#high">high register &amp; alternates</a>.</div>
     </section>
-    <section id="patterns">
-      <h2>Start here (slow)</h2>
-      <div class="card">
-        <ul>
-          <li>Sa Re Ga Re Sa</li>
-          <li>Re Ga Ma Ga Re</li>
-          <li>Ga Ma Pa Ma Ga</li>
-          <li>Ma Pa Dha Pa Ma</li>
-          <li>Sa Re Ga Ma Pa Dha Ni Sa — then reverse down</li>
-        </ul>
-        <p>Clarity beats speed. Add the metronome only after the fingers know the path.</p>
+
+    <section id="listen">
+      <h2>Hear a real bansuri first</h2>
+      <div class="card play-card">
+        <p class="hint">Unprocessed phrase recordings (not pitched to your Sa) — tone colour to aim for.</p>
+        <div class="actions">
+          <button type="button" class="btn" data-phrase="major-scale">Play major-scale phrase</button>
+          <button type="button" class="btn ghost" data-phrase="rag-jog">Play Rag Jog snippet</button>
+          <button type="button" class="btn stop" data-stop>Stop</button>
+        </div>
       </div>
     </section>
+
+    <section id="easy">
+      <h2>Easy (Sa–Re–Ga–M)</h2>
+      <div class="card play-card" data-pattern="S R G R S">
+        <strong>1 · Neighbours</strong>
+        <p class="sargam">S R G R S</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="S R S R S">
+        <strong>2 · Sa–Re only</strong>
+        <p class="sargam">S R S R S</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="R G M G R">
+        <strong>3 · Re–Ga–M</strong>
+        <p class="sargam">R G M G R</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="S R G M G R S">
+        <strong>4 · Up and down</strong>
+        <p class="sargam">S R G M G R S</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="S R G M  M G R S">
+        <strong>5 · Hold the top</strong>
+        <p class="sargam">S R G M · M G R S</p>
+        <p class="hint">Play once slow; breathe at the middle.</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pa">
+      <h2>Add Pa (middle Pa fingering)</h2>
+      <p>Middle Pa = top hole open, five closed — see <a href="swaras.html#pa-fingering">swaras chart</a>.</p>
+      <div class="card play-card" data-pattern="S R G M P M G R S">
+        <strong>6 · Full climb to Pa</strong>
+        <p class="sargam">S R G M P M G R S</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="G M P M G">
+        <strong>7 · Ga–M–Pa</strong>
+        <p class="sargam">G M P M G</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="S G M P  P M G S">
+        <strong>8 · Skip Re</strong>
+        <p class="sargam">S G M P · P M G S</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern=",P ,D ,N S  S ,N ,D ,P">
+        <strong>9 · From mandra Pa up to Sa</strong>
+        <p class="sargam">,P ,D ,N S · S ,N ,D ,P</p>
+        <p class="hint">Leading comma = octave below Sa (all-closed Pa, then Dha, Ni).</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="komal">
+      <h2>Komal taste (half-hole)</h2>
+      <div class="card play-card" data-pattern="S r R r S">
+        <strong>10 · Komal Re</strong>
+        <p class="sargam">S r R r S</p>
+        <p class="hint">Half-open the 3rd hole for <strong>r</strong>.</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="R g G g R">
+        <strong>11 · Komal Ga</strong>
+        <p class="sargam">R g G g R</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+      <div class="card play-card" data-pattern="S R G m M G R S">
+        <strong>12 · Shuddha Ma vs tivra Ma</strong>
+        <p class="sargam">S R G m M G R S</p>
+        <p class="hint"><strong>m</strong> = half-hole shuddha Ma · <strong>M</strong> = all-open tivra Ma.</p>
+        <div class="chips" aria-hidden="true"></div>
+        <div class="actions">
+          <button type="button" class="btn" data-play>Play</button>
+          <button type="button" class="btn ghost" data-slow>Slower</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>How to practise these</h2>
+      <ol class="steps">
+        <li>Turn on the Sa drone. Match your three-hole Sa to it before any pattern.</li>
+        <li>Play the sample once while watching the lit swaras.</li>
+        <li>Echo on flute — same speed or slower. Clarity before metro.</li>
+        <li>Two clean rounds, then the next card. Stop while tone is still honest.</li>
+      </ol>
+      <p>Full week plan: <a href="routine.html">Practice routine</a>. Tunes: <a href="songs.html">Simple songs</a>.</p>
+    </section>
+
     <section id="next">
       <h2>Next</h2>
       <div class="row">
-        <a class="btn nav" href="resources.html">More resources</a>
-        <a class="btn ghost" href="murali.html">The murali</a>
+        <a class="btn nav" href="songs.html">Simple songs</a>
+        <a class="btn ghost" href="routine.html">Practice routine</a>
+        <a class="btn ghost" data-stop>Stop sound</a>
       </div>
     </section>
 
     <footer>
       Created by Bikash Acharya ·
       <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
-      Pedagogy distilled from free bansuri tutorials (Radhe Flutes, bansuriflute.co.uk, bansuri.com,
-      chandrakantha.com) — see <a href="resources.html">Resources</a>. Practice with the Sa drone below
-      (same bar as Singing).<br />
-      Markdown: <a href="alankars.md">alankars.md</a>
+      Bansuri playback samples: <a href="samples/bansuri/CREDITS.md">CREDITS</a>
+      (sankalp CC BY 4.0 · Ninad_P CC0). Markdown: <a href="alankars.md">alankars.md</a>
       <p class="sy-rooms-foot">
         <a href="/">Sangeet Yatra</a>
         · <a href="/singing/">Singing</a>
@@ -94,12 +242,60 @@
 </div>
 <script src="js/sangeet-mobile-nav.js"></script>
 <script src="js/sangeet-practice-bar.js"></script>
+<script src="js/basuri-core.js"></script>
 <script>
 SangeetPracticeBar.init({
   useTablaFallbackClicks: true,
   persistSaKey: 'basuri-sa-midi',
   toolbarLabel: 'Basuri practice controls'
 });
+
+(function () {
+  function fillChips(card) {
+    var pat = card.getAttribute('data-pattern') || '';
+    var box = card.querySelector('.chips');
+    if (!box) return;
+    box.innerHTML = '';
+    pat.trim().split(/\s+/).forEach(function (tok) {
+      var span = document.createElement('span');
+      span.className = 'chip';
+      span.textContent = tok;
+      box.appendChild(span);
+    });
+  }
+  document.querySelectorAll('.play-card[data-pattern]').forEach(fillChips);
+
+  function clearOn() {
+    document.querySelectorAll('.chip.on').forEach(function (c) { c.classList.remove('on'); });
+  }
+
+  function run(card, gap) {
+    var pat = card.getAttribute('data-pattern');
+    var chips = card.querySelectorAll('.chip');
+    BasuriCore.playSequence(pat, {
+      gapMs: gap,
+      noteMs: Math.min(gap - 50, 500),
+      onNote: function (i) {
+        clearOn();
+        if (chips[i]) chips[i].classList.add('on');
+      },
+      onDone: clearOn
+    });
+  }
+
+  document.addEventListener('click', function (ev) {
+    var t = ev.target;
+    if (t.matches('[data-stop]')) { BasuriCore.stopAll(); clearOn(); return; }
+    if (t.matches('[data-phrase]')) {
+      BasuriCore.playPhrase(t.getAttribute('data-phrase'));
+      return;
+    }
+    var card = t.closest('.play-card[data-pattern]');
+    if (!card) return;
+    if (t.matches('[data-play]')) run(card, 520);
+    if (t.matches('[data-slow]')) run(card, 780);
+  });
+})();
 </script>
 </body>
 </html>
