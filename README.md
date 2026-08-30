@@ -5,6 +5,9 @@ in the same Sangeet Yatra style as Piano, Guitar, and Singing.
 
 **Live (when deployed):** https://bikashacharya.com/basuri/
 
+On merge to `main`, [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
+
 ## Paths
 
 | Page | Focus |
