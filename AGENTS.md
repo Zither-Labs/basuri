@@ -9,6 +9,7 @@ You are the agent for the **Learn Basuri** site in this repository.
 Primary work: beginner bamboo-flute pedagogy (HTML + Markdown twins), especially
 **first sound / embouchure**, **practice routine**, playable **alankars / songs**, the
 **murali** page (end-blown / recorder-like bamboo, distinct from side-blown basuri),
+the **Carnatic venu** page (8-hole south Indian flute),
 and the **layout calculator** (`make.html` + `js/basuri-flute-calc.js`) for DIY tube/hole marks.
 
 Audio: real bansuri samples in `samples/bansuri/` + `js/basuri-core.js`. Mic note

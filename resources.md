@@ -12,6 +12,8 @@
           - [Hold](hold.html) → [long tones](breath.html)
           - [Swaras](swaras.html) → [finger ladder](ladder.html) → [listen (tuner)](listen.html) → [alankars](alankars.html) → [songs](songs.html)
           - [Murali](murali.html) — end-blown (recorder-like) vs side-blown basuri
+          - [Carnatic venu](venu.html) — 8-hole south Indian flute (Sa = top two)
+          - [Layout calculator](make.html) — bamboo / PVC / murali / venu DIY marks
 
         
       

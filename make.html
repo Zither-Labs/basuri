@@ -26,7 +26,7 @@
     <a href="#intro">Start here</a>
     <a href="#anatomy">Anatomy</a>
     <a href="#pitch">How pitch works</a>
-    <a href="#modes">Bamboo · PVC · murali</a>
+    <a href="#modes">Bamboo · PVC · murali · venu</a>
     <a href="#calc">Calculator</a>
     <a href="#results">Layout results</a>
     <a href="#diameters">Hole sizes</a>
@@ -48,6 +48,7 @@
     <a href="songs.html">Simple songs</a>
     <h2>Story</h2>
     <a href="murali.html">The murali</a>
+    <a href="venu.html">Carnatic venu</a>
     <h2>More</h2>
     <a href="resources.html">Resources</a>
     <a href="index.html">Home</a>
@@ -65,13 +66,12 @@
     <section id="intro">
       <h1>Flute layout calculator</h1>
       <p class="lead">You know nothing about making a flute? Good — this page is written for that.
-        Three modes: <strong>bamboo bansuri</strong> (side-blown), <strong>PVC bansuri</strong> (same layout, plumbing pipe),
-        and <strong>murali</strong> (end-blown / recorder-like fipple). Pick a key, get tube size, mouth or labium placement,
-        finger-hole marks, diameters, and a maker workflow.</p>
-      <div class="note tip">Playing map for side-blown basuri: <strong>Sa = top three finger holes covered</strong>
-        (Eastern). Shop “C Natural medium” usually means that three-hole Sa sounds C.
-        Jump to the <a href="#calc">calculator</a>; read anatomy first if this is new.
-        End-blown path: also see <a href="murali.html">The murali</a>.</div>
+        Three modes plus Carnatic: <strong>bamboo bansuri</strong>, <strong>PVC bansuri</strong>,
+        <strong>murali</strong> (end-blown), and <strong>venu</strong> (8-hole Carnatic, side-blown).
+        Pick a key, get tube size, mouth or labium placement, finger-hole marks, diameters, and a maker workflow.</p>
+      <div class="note tip">Playing map for this room’s bansuri: <strong>Sa = top three finger holes covered</strong>
+        (Eastern). Carnatic venu uses <strong>Sa = top two closed</strong> — see <a href="venu.html">Carnatic venu</a>.
+        Jump to the <a href="#calc">calculator</a>. End-blown path: <a href="murali.html">The murali</a>.</div>
       <div class="note warn">Numbers are <strong>starting marks</strong>. Finish by ear (or with <a href="listen.html">Listen</a>).
         Eye protection on. <strong>Never heat or burn PVC</strong> — toxic fumes; drill and file only.</div>
     </section>
@@ -100,35 +100,47 @@
     </section>
 
     <section id="modes">
-      <h2>Bamboo · PVC · murali</h2>
+      <h2>Bamboo · PVC · murali · venu</h2>
       <div class="card">
         <table class="fingering">
-          <tr><th></th><th>Bamboo bansuri</th><th>PVC bansuri</th><th>Murali</th></tr>
+          <tr><th></th><th>Bamboo bansuri</th><th>PVC bansuri</th><th>Murali</th><th>Carnatic venu</th></tr>
           <tr>
             <td><strong>Blow</strong></td>
             <td>Across side mouth hole</td>
             <td>Same (side-blown)</td>
             <td>Into the tip (fipple / duct)</td>
+            <td>Across side mouth hole</td>
           </tr>
           <tr>
             <td><strong>Tube</strong></td>
             <td>Seasoned bamboo</td>
             <td>Sch.40 PVC + end cap</td>
             <td>Bamboo (or PVC with a carved block)</td>
+            <td>Bamboo (~14″ class common)</td>
           </tr>
           <tr>
             <td><strong>Holes</strong></td>
             <td>6 + optional pancham</td>
             <td>Same craft %</td>
-            <td>6 fingers (no pancham in this calc)</td>
+            <td>6 fingers (no pancham)</td>
+            <td><strong>8</strong> in a line (7 used daily)</td>
+          </tr>
+          <tr>
+            <td><strong>Sa</strong></td>
+            <td>Top 3 closed</td>
+            <td>Top 3 closed</td>
+            <td>By ear / folk</td>
+            <td>Top <strong>2</strong> closed</td>
           </tr>
           <tr>
             <td><strong>Best for</strong></td>
-            <td>Real tone / classical path</td>
-            <td>Cheap prototypes, learning layout</td>
-            <td>Easier first sound, folk / toys</td>
+            <td>This room’s path</td>
+            <td>Cheap prototypes</td>
+            <td>Easier first noise</td>
+            <td>Carnatic / south Indian</td>
           </tr>
         </table>
+        <p>Play guide: <a href="venu.html">Carnatic venu</a>.</p>
       </div>
     </section>
 
@@ -168,6 +180,7 @@
               <option value="bansuri" selected>Bamboo bansuri (side-blown)</option>
               <option value="pvc">PVC bansuri (side-blown)</option>
               <option value="murali">Murali (end-blown / fipple)</option>
+              <option value="venu">Carnatic venu (8 finger holes)</option>
             </select>
           </div>
           <div class="calc-field" style="grid-column: 1 / -1;">
@@ -290,15 +303,14 @@
       <h2>Limits, credits, safety</h2>
       <div class="card">
         <ul>
-          <li>Bamboo tube presets summarise public FluteMate measurement charts. Hole % layout reverse-engineered from their published E Natural Bass mark list. PVC snaps those keys to common Schedule-40 bores.</li>
+          <li>Bamboo tube presets summarise public FluteMate measurement charts. Hole % layout reverse-engineered from their published E Natural Bass mark list. PVC snaps those keys to common Schedule-40 bores. Carnatic venu uses eight denser marks across that span.</li>
           <li>Murali marks remap the same musical ratios from the labium; fipple geometry is only hinted (window / windway sizes) — voicing is craftwork.</li>
-          <li>Acoustic hints follow open-organ-pipe thinking (e.g.
-            <a href="https://www.themysticbamboo.com/blog/science-of-sound-in-a-flute" target="_blank" rel="noopener">The Mystic Bamboo — science of sound</a>).
-            See also <a href="http://iotic.com/flutomat/" target="_blank" rel="noopener">Flutomat</a>.</li>
+          <li>Venu play guide: <a href="venu.html">Carnatic venu</a>. Acoustic hints follow open-organ-pipe thinking. See also <a href="http://iotic.com/flutomat/" target="_blank" rel="noopener">Flutomat</a>.</li>
           <li><strong>Safety:</strong> eye protection; ventilated dust work. Bamboo: heated rods optional. <strong>PVC: never flame or melt.</strong> Adults only unless supervised.</li>
         </ul>
         <div class="row" style="margin-top:1rem;">
           <a class="btn nav" href="choose.html">Choose a ready flute</a>
+          <a class="btn ghost" href="venu.html">Carnatic venu</a>
           <a class="btn ghost" href="murali.html">Murali explainer</a>
           <a class="btn ghost" href="listen.html">Tune with Listen</a>
         </div>
@@ -308,7 +320,7 @@
     <footer>
       Created by Bikash Acharya ·
       <a href="mailto:bacharya02@gmail.com">bacharya02@gmail.com</a><br />
-      Layout calculator for bamboo / PVC bansuri and end-blown murali — starting marks only; finish by ear.
+      Layout calculator for bamboo / PVC bansuri, murali, and Carnatic venu — starting marks only; finish by ear.
       Markdown: <a href="make.md">make.md</a>
       <p class="sy-rooms-foot">
         <a href="/">Sangeet Yatra</a>
@@ -356,15 +368,18 @@
       val('presetHint').innerHTML = 'PVC snaps each key to the nearest <strong>Schedule-40</strong> bore. Tone is a prototype — bamboo still wins for classical colour.';
     } else if (instrumentId() === 'murali') {
       val('presetHint').innerHTML = 'End-blown folk sizes. Build the <strong>fipple</strong> first. See <a href="murali.html">The murali</a>.';
+    } else if (instrumentId() === 'venu') {
+      val('presetHint').innerHTML = 'Eight finger holes. <strong>Sa = top two closed</strong> (not three). See <a href="venu.html">Carnatic venu</a>.';
     } else {
       val('presetHint').innerHTML = 'Beginners: start with <strong>C Natural Medium</strong>.';
     }
     var murali = instrumentId() === 'murali';
+    var hideHand = murali || instrumentId() === 'venu';
     val('embLabel').textContent = murali ? 'Labium / window from tip (mm)' : 'Mouth hole from top (mm)';
     val('embHint').textContent = murali
       ? 'Voicing edge where the air sheet splits — measure from the physical tip of the beak.'
       : 'Centre of embouchure, measured from cork or end-cap end.';
-    val('handedField').style.display = murali ? 'none' : '';
+    val('handedField').style.display = hideHand ? 'none' : '';
   }
 
   function applyPreset(resetEmb) {
@@ -445,6 +460,9 @@
       if (hole.offset) {
         parts.push('<circle cx="' + x + '" cy="' + cy + '" r="' + rad + '" fill="#b5451d" opacity="0.85"/>');
         parts.push('<text x="' + x + '" y="' + (cy + 18) + '" text-anchor="middle" fill="#5a4a34" font-size="10">7·Pa</text>');
+      } else if (hole.tuning) {
+        parts.push('<circle cx="' + x + '" cy="' + cy + '" r="' + rad + '" fill="#d9a441" stroke="#b5451d" stroke-width="1"/>');
+        parts.push('<text x="' + x + '" y="' + (y - 8) + '" text-anchor="middle" fill="#5a4a34" font-size="10">8</text>');
       } else {
         parts.push('<circle cx="' + x + '" cy="' + cy + '" r="' + rad + '" fill="#2a1f14"/>');
         parts.push('<text x="' + x + '" y="' + (y - 8) + '" text-anchor="middle" fill="#3d2c1c" font-size="10">' + hole.index + '</text>');
@@ -472,6 +490,15 @@
         '<li><strong>Drill undersize</strong>, enlarge while checking a tuner / <a href="listen.html">Listen</a>. No pancham hole in this layout.</li>' +
         '<li><strong>Sa by ear</strong> — folk spacing may not match classical top-three Sa; pick a steady tonic and half-hole komal notes. See <a href="murali.html">The murali</a>.</li>' +
         '</ol><div class="note tip">Want classical embouchure later? Switch mode to bamboo bansuri or buy a side-blown starter.</div>';
+    }
+    if (instrument === 'venu') {
+      return '<ol class="steps">' +
+        '<li><strong>Bamboo</strong> near the preset length/ID (~14″ class is common). Cork the top; cut the side mouth hole.</li>' +
+        '<li><strong>Mark eight holes</strong> on one centreline (no offset 7th). Gaps are tighter than bansuri.</li>' +
+        '<li><strong>Drill undersize</strong> all eight; leave hole 8 open while tuning.</li>' +
+        '<li><strong>Tune Sa</strong> with top <em>two</em> closed, then <strong>Pa</strong> with top <em>five</em> closed against a drone.</li>' +
+        '<li><strong>Ma / gamakas</strong> — enlarge carefully; traditional Ma often needs half-holing. See <a href="venu.html">Carnatic venu</a>.</li>' +
+        '</ol><div class="note tip">This room’s bansuri lessons still use three-hole Sa — keep charts separate.</div>';
     }
     return '<ol class="steps">' +
       '<li><strong>Choose bamboo</strong> — straight, crack-free, seasoned. Match ID/wall; take ~1″ extra length.</li>' +
@@ -539,7 +566,9 @@
     }
     dia += '<p><strong>Finger holes:</strong> start near <strong>' + r.diameters.startDrillMm +
       ' mm</strong>, enlarge to the table targets.' +
-      (r.includePancham ? ' Hole 5 (Ni) often largest; hole 7 (Pa) smaller and offset.' : ' Six holes only — Ni often a touch larger.') +
+      (r.instrument === 'venu'
+        ? ' Eight nearly equal holes; hole 8 often left open.'
+        : (r.includePancham ? ' Hole 5 (Ni) often largest; hole 7 (Pa) smaller and offset.' : ' Six holes only — Ni often a touch larger.')) +
       '</p><p>' + r.diameters.note + '</p>' +
       '<ul>' + r.warnings.map(function (w) { return '<li>' + w + '</li>'; }).join('') + '</ul>';
     document.getElementById('diaCard').innerHTML = dia;

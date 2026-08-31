@@ -14,7 +14,7 @@ syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
 |------|--------|
 | [index](index.html) | Landing — first sound + murali |
 | [choose](choose.html) | Picking a starter flute |
-| [make](make.html) | DIY layout calculator — bamboo / PVC bansuri + murali |
+| [make](make.html) | DIY layout calculator — bamboo / PVC / murali / venu |
 | [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
 | [routine](routine.html) | Daily practice plan + target-tone playback |
 | [hold](hold.html) | Posture and hands |
@@ -25,6 +25,7 @@ syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
 | [alankars](alankars.html) | Patterns with real bansuri playback |
 | [songs](songs.html) | Simple sargam tunes with playback |
 | [murali](murali.html) | End-blown bamboo (recorder-like) vs side-blown basuri |
+| [venu](venu.html) | Carnatic / south Indian 8-hole flute — how to play |
 | [resources](resources.html) | Curated free tutors |
 
 Each HTML page has a Markdown twin.

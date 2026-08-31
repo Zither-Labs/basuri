@@ -17,6 +17,7 @@ read clearly at 16×16 in Chrome.
 | `alankars.svg` | Alankars — ornament loop |
 | `songs.svg` | Songs — notes |
 | `murali.svg` | Murali — end-blown / vertical |
+| `venu.svg` | Carnatic venu — 8 holes |
 | `make.svg` | Make / calculator — flute + measure |
 | `resources.svg` | Resources — open book |
 

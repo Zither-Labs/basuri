@@ -1,8 +1,7 @@
 /**
- * Eastern flute layout calculator — bamboo bansuri, PVC bansuri, murali (end-blown).
- * Craft hole % calibrated from published FluteMate E-bass example;
- * tube presets from FluteMate measurement charts; PVC from Sch.40 bore tables;
- * murali marks remapped from labium (fipple). Starting points only — tune by ear.
+ * Eastern flute layout calculator — bamboo bansuri, PVC bansuri, murali (end-blown),
+ * Carnatic venu (8 finger holes). Craft hole % calibrated from published FluteMate
+ * E-bass example; venu marks denser interpolate across that span. Starting points only.
  */
 (function (global) {
   'use strict';
@@ -112,6 +111,35 @@
     { id: 'mur-C4', label: 'C murali low', family: 'bass', pc: 0, octave: 4, inches: 32, idMm: 22, wallMm: 2.5 }
   ];
 
+  /**
+   * Carnatic venu (south Indian) — side-blown, eight finger holes in a line.
+   * Classical ~14″ × ~¾″ descriptions; Sa = top two closed (not three).
+   * Hole % = denser interpolate across the bansuri finger span (educational start marks).
+   */
+  var VENU_HOLE_FRAC = {
+    h1: 0.455,
+    h2: 0.505,
+    h3: 0.555,
+    h4: 0.608,
+    h5: 0.660,
+    h6: 0.715,
+    h7: 0.770,
+    h8: 0.840
+  };
+
+  var VENU_PRESETS = [
+    { id: 'venu-Gs5', label: 'G♯ Carnatic (common concert size)', family: 'medium', pc: 8, octave: 5, inches: 14.5, idMm: 17, wallMm: 2 },
+    { id: 'venu-A5', label: 'A Carnatic', family: 'medium', pc: 9, octave: 5, inches: 14, idMm: 16.5, wallMm: 2 },
+    { id: 'venu-B5', label: 'B Carnatic', family: 'medium', pc: 11, octave: 5, inches: 13.2, idMm: 16, wallMm: 1.8 },
+    { id: 'venu-C5', label: 'C Carnatic (brighter / shorter)', family: 'medium', pc: 0, octave: 5, inches: 12.8, idMm: 15.5, wallMm: 1.8 },
+    { id: 'venu-Cs5', label: 'C♯ Carnatic', family: 'medium', pc: 1, octave: 5, inches: 12.4, idMm: 15, wallMm: 1.7 },
+    { id: 'venu-D5', label: 'D Carnatic', family: 'medium', pc: 2, octave: 5, inches: 12, idMm: 14.5, wallMm: 1.6 },
+    { id: 'venu-Ds5', label: 'D♯ Carnatic', family: 'medium', pc: 3, octave: 5, inches: 11.6, idMm: 14, wallMm: 1.6 },
+    { id: 'venu-E5', label: 'E Carnatic', family: 'medium', pc: 4, octave: 5, inches: 11.2, idMm: 13.5, wallMm: 1.5 },
+    { id: 'venu-Ds4', label: 'D♯ bass Carnatic (longer)', family: 'bass', pc: 3, octave: 4, inches: 22, idMm: 22, wallMm: 2.4 },
+    { id: 'venu-G4', label: 'G bass Carnatic', family: 'bass', pc: 7, octave: 4, inches: 20, idMm: 20, wallMm: 2.2 }
+  ];
+
   var HOLE_META = [
     { key: 'h1', label: 'Hole 1 (nearest mouth)', swara: 'Ma / tivra Ma', role: 'Madhyam', openSemis: 6 },
     { key: 'h2', label: 'Hole 2', swara: 'Ga', role: 'Gandhar', openSemis: 4 },
@@ -122,6 +150,18 @@
     { key: 'h7', label: 'Hole 7 · Pancham (offset)', swara: 'Pa', role: 'Pancham / tuning', openSemis: -7, offset: true }
   ];
 
+  /** Eight-hole Carnatic layout — openSemis ≈ note when that hole is first open above Sa (2 closed). */
+  var VENU_HOLE_META = [
+    { key: 'h1', label: 'Hole 1 · L index', swara: 'above Sa / gamaka', role: 'Left hand 1', openSemis: 4, finger: 'L1' },
+    { key: 'h2', label: 'Hole 2 · L middle', swara: 'Sa region', role: 'Left hand 2 (Sa pair)', openSemis: 2, finger: 'L2' },
+    { key: 'h3', label: 'Hole 3 · L ring', swara: 'toward Ri / Ga', role: 'Left hand 3', openSemis: 0, finger: 'L3' },
+    { key: 'h4', label: 'Hole 4 · R index', swara: 'toward Ga / Ma', role: 'Right hand 1', openSemis: -2, finger: 'R1' },
+    { key: 'h5', label: 'Hole 5 · R middle', swara: 'Pa (5 closed)', role: 'Right hand 2', openSemis: -5, finger: 'R2' },
+    { key: 'h6', label: 'Hole 6 · R ring', swara: 'toward Ma / Da', role: 'Right hand 3', openSemis: -7, finger: 'R3' },
+    { key: 'h7', label: 'Hole 7 · R pinky', swara: 'lower region', role: 'Right hand 4', openSemis: -9, finger: 'R4' },
+    { key: 'h8', label: 'Hole 8 · usually open', swara: 'tuning / special', role: 'Often left open', openSemis: -12, finger: 'open', tuning: true }
+  ];
+
   var INSTRUMENTS = {
     bansuri: {
       id: 'bansuri',
@@ -129,7 +169,8 @@
       presets: BANSURI_PRESETS,
       defaultPreset: 'C5-med',
       includePancham: true,
-      material: 'bamboo'
+      material: 'bamboo',
+      holeSystem: 'bansuri'
     },
     pvc: {
       id: 'pvc',
@@ -137,7 +178,8 @@
       presets: PVC_PRESETS,
       defaultPreset: 'pvc-C5-med',
       includePancham: true,
-      material: 'pvc'
+      material: 'pvc',
+      holeSystem: 'bansuri'
     },
     murali: {
       id: 'murali',
@@ -145,7 +187,17 @@
       presets: MURALI_PRESETS,
       defaultPreset: 'mur-C5',
       includePancham: false,
-      material: 'bamboo'
+      material: 'bamboo',
+      holeSystem: 'murali'
+    },
+    venu: {
+      id: 'venu',
+      label: 'Carnatic venu (8 finger holes)',
+      presets: VENU_PRESETS,
+      defaultPreset: 'venu-Gs5',
+      includePancham: false,
+      material: 'bamboo',
+      holeSystem: 'venu'
     }
   };
 
@@ -206,6 +258,10 @@
     if (instrumentId === 'murali') {
       base = clamp(idMm * 0.42, 5.5, family === 'bass' ? 11 : 9.5);
     }
+    if (instrumentId === 'venu') {
+      /* Carnatic holes are often more uniform and a touch smaller than bansuri Ni hole. */
+      base = clamp(idMm * 0.44, 5.5, family === 'bass' ? 11.5 : 9.5);
+    }
     var embMajor = clamp(idMm * 0.72, 8, 16);
     var embMinor = clamp(idMm * 0.55, 6.5, 13);
     var startBit = clamp(base * 0.55, 4, 7);
@@ -216,8 +272,27 @@
       note = 'PVC only: drill and file — never heat or burn PVC (toxic fumes). Start undersize; enlarge while checking a tuner.';
     } else if (instrumentId === 'murali') {
       note = 'Drill undersize, then enlarge while checking a tuner. Fipple window size changes speaking more than tiny hole shifts — tune the voicing first.';
+    } else if (instrumentId === 'venu') {
+      note = 'Carnatic venu holes are often nearly equal size. Start undersize; enlarge while checking Sa (top two closed) and Pa (top five closed). Hole 8 is usually left open.';
     } else {
       note = 'Burn or drill undersize, then enlarge while checking a tuner. You can raise pitch by enlarging a hole; you cannot easily shrink it.';
+    }
+    var fingerTargetMm;
+    if (instrumentId === 'venu') {
+      fingerTargetMm = [];
+      for (var v = 0; v < 8; v++) {
+        fingerTargetMm.push(round1(base));
+      }
+    } else {
+      fingerTargetMm = [
+        round1(base),
+        round1(base),
+        round1(base),
+        round1(base),
+        round1(ni),
+        round1(base),
+        round1(pa)
+      ];
     }
     return {
       embouchureOval: { majorMm: round1(embMajor), minorMm: round1(embMinor) },
@@ -230,15 +305,7 @@
         depthMm: round1(clamp(idMm * 0.08, 0.8, 1.6))
       },
       startDrillMm: round1(startBit),
-      fingerTargetMm: [
-        round1(base),
-        round1(base),
-        round1(base),
-        round1(base),
-        round1(ni),
-        round1(base),
-        round1(pa)
-      ],
+      fingerTargetMm: fingerTargetMm,
       wallMm: wallMm,
       note: note
     };
@@ -306,21 +373,31 @@
       ? diameters.windowHintMm.widthMm
       : diameters.embouchureOval.majorMm;
 
-    var metas = HOLE_META.filter(function (m) {
-      return includePancham || m.key !== 'h7';
-    });
+    var metas;
+    var fracTable = HOLE_FRAC;
+    if (instrumentId === 'venu') {
+      metas = VENU_HOLE_META.slice();
+      fracTable = VENU_HOLE_FRAC;
+    } else {
+      metas = HOLE_META.filter(function (m) {
+        return includePancham || m.key !== 'h7';
+      });
+    }
 
     var craftHoles = metas.map(function (meta, i) {
       var fromTop;
       if (instrumentId === 'murali') {
         fromTop = muraliHoleFromTip(lengthMm, embFromTop, meta.key);
       } else {
-        fromTop = lengthMm * HOLE_FRAC[meta.key];
+        fromTop = lengthMm * fracTable[meta.key];
       }
       var fromEmb = fromTop - embFromTop;
       var fromFoot = lengthMm - fromTop;
       var targetHz = saHz * Math.pow(2, meta.openSemis / 12);
-      var acousticFromEmb = acousticLengthMm(targetHz, idMm, diameters.fingerTargetMm[i], wallMm, tempC);
+      var diaMm = diameters.fingerTargetMm[i] != null
+        ? diameters.fingerTargetMm[i]
+        : diameters.fingerTargetMm[diameters.fingerTargetMm.length - 1];
+      var acousticFromEmb = acousticLengthMm(targetHz, idMm, diaMm, wallMm, tempC);
       return {
         index: i + 1,
         key: meta.key,
@@ -328,6 +405,7 @@
         swara: meta.swara,
         role: meta.role,
         offset: !!meta.offset,
+        tuning: !!meta.tuning,
         fromTopMm: round1(fromTop),
         fromTopIn: round2(mmToIn(fromTop)),
         fromEmbouchureMm: round1(fromEmb),
@@ -335,7 +413,7 @@
         spacingFromPrevMm: 0,
         targetHz: round1(targetHz),
         acousticHintMm: round1(acousticFromEmb),
-        diameterMm: diameters.fingerTargetMm[i],
+        diameterMm: diaMm,
         startDrillMm: diameters.startDrillMm
       };
     });
@@ -352,11 +430,16 @@
     var allClosedLen = acousticLengthMm(paHz, idMm, embDia, wallMm, tempC);
     var odMm = input.odMm != null ? Number(input.odMm) : idMm + 2 * wallMm;
 
-    var panchamSide = !includePancham
-      ? 'No pancham (7th) hole on this murali layout — six finger holes only. Folk spacing varies; use Sa by ear if the chart feels off.'
-      : (handed === 'left'
-        ? 'Offset toward the player’s body for a left-hand flute (~90–120° from the finger-hole line).'
-        : 'Offset toward the player’s body for a right-hand flute (~240–270° from the finger-hole line).');
+    var panchamSide;
+    if (instrumentId === 'venu') {
+      panchamSide = 'Eight finger holes in one line (not offset). Hole 8 is usually left open in normal playing and used for fine tuning / special fingerings. Sa = top two closed — different from this room’s bansuri map (top three).';
+    } else if (!includePancham) {
+      panchamSide = 'No pancham (7th) hole on this murali layout — six finger holes only. Folk spacing varies; use Sa by ear if the chart feels off.';
+    } else if (handed === 'left') {
+      panchamSide = 'Offset toward the player’s body for a left-hand flute (~90–120° from the finger-hole line).';
+    } else {
+      panchamSide = 'Offset toward the player’s body for a right-hand flute (~240–270° from the finger-hole line).';
+    }
 
     var warnings;
     if (instrumentId === 'pvc') {
@@ -371,6 +454,13 @@
         'Build and tune the mouthpiece (block, windway, labium/window) before trusting finger-hole sizes — voicing dominates the tone.',
         'Folk muralis often ignore classical “Sa = top three closed” spacing. Pick a steady tonic, then half-hole between notes by ear.',
         'Starting marks only — shorten the foot to flatten, enlarge holes to sharpen.'
+      ];
+    } else if (instrumentId === 'venu') {
+      warnings = [
+        'Carnatic venu: eight finger holes. Normal Sa uses the top two closed (not the bansuri “top three”).',
+        'Hole positions are denser educational marks — concert venu makers tune by ear for gamaka-friendly intonation.',
+        'Traditional Ma often needs half-holing (≈6½) or cross-fingering; some modern “Shashank style” flutes set Ma at six closed.',
+        'Start holes small; check Sa and Pa (five closed) against a drone before chasing every swara.'
       ];
     } else {
       warnings = [
@@ -408,6 +498,7 @@
       footBeyondPaHintMm: round1(Math.max(8, idMm * 0.6)),
       holes: craftHoles,
       includePancham: includePancham,
+      holeCount: craftHoles.length,
       diameters: diameters,
       panchamSide: panchamSide,
       buyExtraMm: round1(25.4),
@@ -455,6 +546,9 @@
     BANSURI_PRESETS: BANSURI_PRESETS,
     PVC_PRESETS: PVC_PRESETS,
     MURALI_PRESETS: MURALI_PRESETS,
+    VENU_PRESETS: VENU_PRESETS,
+    VENU_HOLE_FRAC: VENU_HOLE_FRAC,
+    VENU_HOLE_META: VENU_HOLE_META,
     PVC_PIPES: PVC_PIPES,
     HOLE_FRAC: HOLE_FRAC,
     HOLE_META: HOLE_META,
