@@ -53,7 +53,7 @@
   var offlineDecodeCtx = null, audioUnlocked = false, unlockSilentEl = null;
 
   var metroOn = false, metroTimer = null, metroBeat = 0, metroTickId = 0;
-  var metroIntervalMs = 666, metroNextAt = 0, metroLastTickAt = 0, metroLastWasSam = false;
+  var metroIntervalMs = 666, metroNextAt = 0, metroLastTickAt = 0, metroLastWasSam = false, metroLastBeat = 0;
 
   function $(id) { return document.getElementById(id); }
   function midiToHz(m) { return 440 * Math.pow(2, (m - 69) / 12); }
@@ -751,6 +751,7 @@
           metroLastTickAt = performance.now();
           var isSam = metroBeat === 0;
           metroLastWasSam = isSam;
+          metroLastBeat = metroBeat;
           var level = accentLevel(metroBeat % cycle, sel);
           var thekaEl = $("tabla-theka");
           var wantTabla = !!(cfg.features.tablaTheka && thekaEl && thekaEl.checked);
@@ -1011,6 +1012,7 @@
     getMetroTickId: function () { return metroTickId; },
     getMetroIntervalMs: function () { return metroIntervalMs; },
     wasLastSam: function () { return metroLastWasSam; },
+    getLastMetroBeat: function () { return metroLastBeat; },
     getMetroLastTickAt: function () { return metroLastTickAt; },
     getMetroNextAt: function () { return metroNextAt; },
     startMetro: startMetro,
