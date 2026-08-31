@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#b5451d"/>
+  <!-- alankars: ornament loop -->
+  <path d="M10 16c0-4 3-7 6-7s5 2.2 5 5-2 4.5-5 5.5c-2.5.8-4.5 2.2-4.5 4.5 0 2.4 2.2 4 5 4s5-1.8 5-4"
+        fill="none" stroke="#fdf6e9" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="16" cy="16" r="1.6" fill="#d9a441"/>
+</svg>

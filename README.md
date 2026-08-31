@@ -14,6 +14,7 @@ syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
 |------|--------|
 | [index](index.html) | Landing — first sound + murali |
 | [choose](choose.html) | Picking a starter flute |
+| [make](make.html) | DIY layout calculator — bamboo / PVC bansuri + murali |
 | [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
 | [routine](routine.html) | Daily practice plan + target-tone playback |
 | [hold](hold.html) | Posture and hands |

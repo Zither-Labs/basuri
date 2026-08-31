@@ -164,3 +164,48 @@ table.fingering th { color: var(--terra); font-weight: 800; }
   nav { display: none; }
   h1 { font-size: 1.75rem; }
 }
+
+/* Flute layout calculator */
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 12px 14px;
+  margin: 12px 0;
+}
+.calc-field label {
+  display: block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 4px;
+}
+.calc-field input, .calc-field select {
+  width: 100%; font: inherit; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink);
+}
+.calc-field .hint { font-size: 0.8rem; color: var(--muted); margin: 4px 0 0; }
+.calc-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.calc-summary {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 10px; margin: 14px 0;
+}
+.calc-stat {
+  background: #f7efe0; border-radius: 10px; padding: 10px 12px;
+  border: 1px solid var(--line);
+}
+.calc-stat strong {
+  display: block; font-size: 1.15rem; color: var(--terra); font-variant-numeric: tabular-nums;
+}
+.calc-stat span { font-size: 0.78rem; color: var(--muted); }
+table.calc-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 10px 0; }
+table.calc-table th, table.calc-table td {
+  text-align: left; padding: 7px 8px; border-bottom: 1px solid #eadfce;
+  vertical-align: top;
+}
+table.calc-table th { color: var(--terra); font-weight: 800; font-size: 0.8rem; }
+table.calc-table td.num { font-variant-numeric: tabular-nums; font-family: ui-monospace, Consolas, monospace; }
+.flute-svg-wrap {
+  overflow-x: auto; background: #f7efe0; border: 1px solid var(--line);
+  border-radius: 12px; padding: 12px; margin: 14px 0;
+}
+.flute-svg-wrap svg { display: block; width: 100%; min-width: 520px; height: auto; }
+.anatomy-list { columns: 1; }
+@media (min-width: 700px) { .anatomy-list { columns: 2; gap: 1.5rem; } }
+.anatomy-list li { break-inside: avoid; margin: 0.4rem 0; }

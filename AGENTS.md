@@ -7,8 +7,9 @@ You are the agent for the **Learn Basuri** site in this repository.
 - Repo: this folder (`basuri/`). GitHub [Zither-Labs/basuri](https://github.com/Zither-Labs/basuri) when pushed.
 
 Primary work: beginner bamboo-flute pedagogy (HTML + Markdown twins), especially
-**first sound / embouchure**, **practice routine**, playable **alankars / songs**, and the
-**murali** page (end-blown / recorder-like bamboo, distinct from side-blown basuri).
+**first sound / embouchure**, **practice routine**, playable **alankars / songs**, the
+**murali** page (end-blown / recorder-like bamboo, distinct from side-blown basuri),
+and the **layout calculator** (`make.html` + `js/basuri-flute-calc.js`) for DIY tube/hole marks.
 
 Audio: real bansuri samples in `samples/bansuri/` + `js/basuri-core.js`. Mic note
 detector: `js/basuri-tuner.js` + `listen.html`. See `samples/bansuri/CREDITS.md`.

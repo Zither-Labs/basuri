@@ -6,7 +6,7 @@
 
       
         
-          - [Choose a flute](choose.html)
+          - [Choose a flute](choose.html) · [Layout calculator](make.html) (DIY marks)
           - [First sound](first-sound.html) (straw + kiss-and-roll)
           - [Practice routine](routine.html) (daily plan + real bansuri target tone)
           - [Hold](hold.html) → [long tones](breath.html)

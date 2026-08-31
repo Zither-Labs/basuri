@@ -71,6 +71,12 @@ classical) vs **fipple** (duct / whistle, folk and children’s instruments).
 - **Have both** — use the murali for fun tunes; practice long tones and Sa on the basuri if that is
   your real goal.
 
+## Make one (layout calculator)
+
+DIY marks for tube length, labium, six finger holes, and window/windway hints: use the
+[flute layout calculator](make.html) in **Murali (end-blown / fipple)** mode. Same page also
+covers bamboo and PVC side-blown bansuri.
+
 ## Next
 
-[Basuri first sound (side-blown)](first-sound.html) · [Komal & tivra (both flutes)](swaras.html#vikrit) · [Choose a flute](choose.html)
+[Basuri first sound (side-blown)](first-sound.html) · [Layout calculator](make.html) · [Komal & tivra (both flutes)](swaras.html#vikrit) · [Choose a flute](choose.html)

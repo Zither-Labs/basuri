@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#b5451d"/>
+  <!-- ladder: steps -->
+  <path d="M9 26V8M23 26V8" fill="none" stroke="#fdf6e9" stroke-width="2" stroke-linecap="round"/>
+  <path d="M9 12h14M9 17h14M9 22h14" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round"/>
+</svg>

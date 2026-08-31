@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#b5451d"/>
+  <!-- swaras: ascending scale dots -->
+  <circle cx="7" cy="23" r="2" fill="#fdf6e9"/>
+  <circle cx="11.5" cy="20" r="2" fill="#fdf6e9"/>
+  <circle cx="16" cy="16.5" r="2" fill="#f0d9a8"/>
+  <circle cx="20.5" cy="13" r="2" fill="#f0d9a8"/>
+  <circle cx="25" cy="9.5" r="2.2" fill="#d9a441"/>
+  <path d="M7 23l18-13.5" fill="none" stroke="#fdf6e9" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+</svg>

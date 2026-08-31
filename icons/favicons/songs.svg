@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#b5451d"/>
+  <!-- songs: eighth note -->
+  <ellipse cx="11.5" cy="22" rx="3.4" ry="2.6" fill="#fdf6e9"/>
+  <ellipse cx="20.5" cy="19.5" rx="3.4" ry="2.6" fill="#f0d9a8"/>
+  <path d="M14.8 21.5V9.5l9-2v12" fill="none" stroke="#fdf6e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.8 11.5l9-2" stroke="#d9a441" stroke-width="1.6"/>
+</svg>

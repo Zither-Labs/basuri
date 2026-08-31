@@ -12,7 +12,9 @@
       
         **Smaller / higher** flutes need less air and shorter stretch — good for small hands. **Middle C** is the usual adult starter. Long bass flutes are hard for day-one embouchure.
 
-        The stamped key (C, G, A…) is a Western pitch label (often tied to the all-closed note). For Indian practice, **Sa is three holes covered** — match the practice-bar drone to that pitch, same idea as Singing.
+        The stamped key (C, G, A…) is a Western pitch label. On many shop mediums (e.g. C Natural), it is the pitch of **three-hole Sa**; all-closed soft air is then a fifth below (lower Pa). For Indian practice, match the practice-bar drone to your three-hole Sa.
+
+        Making your own? Use the [flute layout calculator](make.html) for tube length, bore, hole marks, and diameters.
 
       
     
