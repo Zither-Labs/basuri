@@ -366,19 +366,20 @@
       else if (src.noteOn) src.noteOn(0);
     } catch (e) {}
   }
-  function playSilentHtmlUnlock() {
+  function preferAmbientAudioSession() {
+    // Mix with Spotify / podcasts / audiobooks instead of pausing them.
+    // (Safari maps this to AVAudioSession ambient; still gated by the ringer switch.)
     try {
-      if (!unlockSilentEl) {
-        unlockSilentEl = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=");
-        unlockSilentEl.setAttribute("x-webkit-airplay", "deny");
-        unlockSilentEl.preload = "auto";
-      }
-      unlockSilentEl.currentTime = 0;
-      var p = unlockSilentEl.play();
-      if (p && p.catch) p.catch(function () {});
+      if (navigator.audioSession) navigator.audioSession.type = "ambient";
     } catch (e) {}
   }
+  function playSilentHtmlUnlock() {
+    // Intentionally unused for unlock: playing an HTMLAudioElement on iOS often
+    // switches the page into exclusive "playback" and pauses background audio.
+    // Kept as a no-op stub so older call sites stay harmless.
+  }
   function ensureAudio() {
+    preferAmbientAudioSession();
     if (!audioCtx) {
       audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       mixBus = audioCtx.createGain();
@@ -411,23 +412,24 @@
     return audioCtx;
   }
   function ensureAudioUnlocked() {
+    preferAmbientAudioSession();
     var ctx = ensureAudio();
-    playSilentHtmlUnlock();
+    // Unlock with a silent Web Audio buffer only — do not play HTMLAudio.
     playSilentUnlockBuffer(ctx);
     var resumeP = (ctx.state === "suspended" && ctx.resume) ? ctx.resume() : Promise.resolve();
     return Promise.resolve(resumeP).then(function () {
+      preferAmbientAudioSession();
       audioUnlocked = (ctx.state === "running");
       playSilentUnlockBuffer(ctx);
       return ctx;
     }).catch(function () { return ctx; });
   }
   function installAudioUnlockListeners() {
+    // Do NOT create/resume AudioContext on arbitrary scroll/tap — that pauses
+    // background music on mobile. Unlock only when the user starts drone/metro/etc.
     if (unlockListenersInstalled) return;
     unlockListenersInstalled = true;
-    function onGesture() { ensureAudioUnlocked(); }
-    ["pointerdown", "touchend", "keydown"].forEach(function (ev) {
-      document.addEventListener(ev, onGesture, { capture: true, passive: true });
-    });
+    preferAmbientAudioSession();
     document.addEventListener("visibilitychange", function () {
       if (document.visibilityState === "hidden") audioUnlocked = false;
       else if (audioCtx && audioCtx.state === "suspended") audioUnlocked = false;
