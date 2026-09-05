@@ -17,6 +17,22 @@
 <link rel="apple-touch-icon" href="icons/favicons/index.svg" />
 <title>Learn Basuri — Bamboo flute for beginners</title>
 <style>
+  .paths { display: flex; flex-wrap: wrap; gap: 16px; }
+  .path {
+    display: flex; flex-direction: column; gap: 6px;
+    min-width: 11rem; max-width: 18rem; flex: 1;
+    padding: 1.2rem 1.4rem; text-decoration: none; border-radius: 2px;
+    background: var(--leaf); color: var(--mist);
+    border: 1.5px solid transparent;
+    transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  }
+  .path:hover {
+    transform: translateY(-2px);
+    background: #3a8570;
+  }
+  .path strong { font-size: 1.15rem; font-weight: 600; letter-spacing: 0.02em; color: inherit; }
+  .path span { font-size: 0.92rem; line-height: 1.4; color: rgba(232, 240, 236, 0.85); }
+
   .hero {
     min-height: 100vh; min-height: 100dvh;
     display: flex; flex-direction: column; justify-content: center;
@@ -36,24 +52,6 @@
   .tag {
     max-width: 34rem; font-size: clamp(1.05rem, 2.3vw, 1.25rem);
     line-height: 1.55; color: rgba(238, 246, 242, 0.85); margin: 0 0 2rem;
-  }
-  .paths { display: flex; flex-wrap: wrap; gap: 16px; }
-  .path {
-    display: flex; flex-direction: column; gap: 6px;
-    min-width: 11rem; max-width: 18rem; flex: 1;
-    padding: 1.2rem 1.4rem; text-decoration: none; border-radius: 16px;
-    transition: transform 0.2s ease;
-  }
-  .path:hover { transform: translateY(-3px); }
-  .path strong { font-size: 1.35rem; font-weight: 800; }
-  .path span { font-size: 0.92rem; line-height: 1.4; opacity: 0.9; }
-  .path.theory {
-    background: var(--leaf); color: var(--mist);
-    box-shadow: 0 12px 32px rgba(42, 122, 98, 0.35);
-  }
-  .path.story {
-    background: var(--sand); color: #1a1208;
-    box-shadow: 0 12px 32px rgba(240, 217, 168, 0.28);
   }
   .appendix { margin-top: 1.5rem; max-width: 42rem; }
   .appendix-label {
@@ -81,8 +79,8 @@
   .sy-rooms-foot a { color: var(--sand); text-decoration: none; }
   .sy-rooms-foot a:hover { color: var(--glow); }
   @media (max-width: 560px) {
-    .paths { flex-direction: column; }
-    .path { max-width: none; }
+  
+  
   }
 </style>
 <link rel="stylesheet" href="css/sangeet-practice-bar.css" />
@@ -95,11 +93,15 @@
       Straw drills, embouchure, long tones, then swaras — plus the end-blown murali
       (recorder-style) explained separately.</p>
     <div class="paths">
-      <a class="path theory" href="first-sound.html">
+      <a class="path" href="/theory/eastern/">
+        <strong>Eastern theory</strong>
+        <span>Swara, rāga, laya — the shared guide, then apply on basuri.</span>
+      </a>
+      <a class="path" href="first-sound.html">
         <strong>First sound</strong>
         <span>Start here if you cannot blow a tone. Straw, kiss-and-roll, troubleshooting.</span>
       </a>
-      <a class="path story" href="murali.html">
+      <a class="path" href="murali.html">
         <strong>The murali</strong>
         <span>End-blown bamboo — blow into the tip like a recorder, not across a side hole.</span>
       </a>

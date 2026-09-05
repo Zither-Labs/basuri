@@ -1,3 +1,5 @@
+> **From theory:** [/theory/eastern/#swara](/theory/eastern/#swara).
+
 # Learn Basuri — Swaras
 
 ## Swaras (Sa–Ni)
