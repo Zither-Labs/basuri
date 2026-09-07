@@ -14,4 +14,6 @@ Practice playback uses **real bansuri** recordings (not synth), pitched with Web
 
 Attribution for CC BY material: **sankalp** on Freesound.
 
+Also used by Tools · [Backing band](/tools/backing.html) (pitch-shifted Sa anchors for the basuri stem).
+
 Rebuild helpers (`_prepare.py`, `_download*.py`) are for maintainers; `_raw/` is local cache and gitignored.
