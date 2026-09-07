@@ -6,7 +6,7 @@
 
 Once you can hold a tone, learn the seven swaras. On the Eastern bansuri,
 **Sa is the top three finger holes covered** (nearest the blowing hole), with the
-lower three open. That is the standard Hindustani teaching map — not “all holes closed.”
+lower three open. That is the standard Eastern teaching map — not “all holes closed.”
 
 ## Fingering chart (6-hole · Sa = three covered)
 

@@ -16,7 +16,7 @@ the side-blown flute where air goes across an open embouchure hole on the wall o
 | Hold | More vertical / end-on | Horizontal (transverse) |
 | First sound | Usually easier — the mouthpiece aims the air | Harder — you find the embouchure edge yourself |
 | Tone control | Less bend / meend flexibility | More pitch and colour control (classical preference) |
-| Where you hear it | Folk, toys, film, children’s flutes | Hindustani / Nepali classical and serious practice |
+| Where you hear it | Folk, toys, film, children’s flutes | Eastern / Nepali classical and serious practice |
 
 ## How you blow an end-blown murali
 

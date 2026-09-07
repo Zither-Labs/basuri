@@ -133,3 +133,19 @@ body.theme-journey a:hover {
   background: #f3e6cf;
   border-left-color: var(--terra);
 }
+
+/* Compact data tables — size to content, don’t stretch full main width */
+table {
+  width: max-content;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+th, td {
+  padding: 0.4em 0.7em;
+  vertical-align: top;
+}
+th {
+  white-space: nowrap;
+}
+

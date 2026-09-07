@@ -65,7 +65,7 @@ h3 { font-size: 1.1rem; color: var(--terra); margin: 22px 0 8px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 ol.steps { padding-left: 1.25rem; }
 ol.steps li { margin: 0.55rem 0; }
-table.fingering { border-collapse: collapse; width: 100%; max-width: 520px; margin: 10px 0; font-size: 0.95rem; }
+table.fingering { border-collapse: collapse; width: max-content; max-width: 100%; max-width: 520px; margin: 10px 0; font-size: 0.95rem; }
 table.fingering th, table.fingering td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eadfce; }
 table.fingering th { color: var(--terra); font-weight: 800; }
 .holes {
@@ -194,7 +194,7 @@ table.fingering th { color: var(--terra); font-weight: 800; }
   display: block; font-size: 1.15rem; color: var(--terra); font-variant-numeric: tabular-nums;
 }
 .calc-stat span { font-size: 0.78rem; color: var(--muted); }
-table.calc-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 10px 0; }
+table.calc-table { width: max-content; max-width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 10px 0; }
 table.calc-table th, table.calc-table td {
   text-align: left; padding: 7px 8px; border-bottom: 1px solid #eadfce;
   vertical-align: top;

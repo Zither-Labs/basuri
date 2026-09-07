@@ -22,7 +22,7 @@
       ## Six vs seven vs eight holes
 
       
-        Folk and starter bansuris often have **six** finger holes. Concert Hindustani bansuris often add a **seventh** (offset pancham). Either works for first sound. South Indian *venu* (Carnatic) usually has **eight** finger holes and a different Sa map — see [Carnatic venu](venu.html). This room’s default path is the side-blown bansuri / basuri family used across North India and Nepal.
+        Folk and starter bansuris often have **six** finger holes. Concert Eastern bansuris often add a **seventh** (offset pancham). Either works for first sound. South Indian *venu* (Carnatic) usually has **eight** finger holes and a different Sa map — see [Carnatic venu](venu.html). This room’s default path is the side-blown bansuri / basuri family used across North India and Nepal.
 
       
     
