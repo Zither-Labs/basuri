@@ -38,5 +38,4 @@
     
       ## Next
 
-      
-        Learn the swaras
+[Practice routine](routine.html)

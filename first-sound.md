@@ -44,6 +44,10 @@ Full plan: [practice routine](routine.html).
     
       ## Kiss-and-roll
 
+![Bansuri player with lips at the blowing hole](images/start/breath-player.jpg)
+
+Photo: Pradeepkulkarni1 · [Commons](https://commons.wikimedia.org/wiki/File:PravinGodkhindi.jpg) · CC0
+
       
         
           - Press lips gently together.
@@ -59,6 +63,10 @@ Full plan: [practice routine](routine.html).
     
     
       ## On the flute — first tone
+
+![Player sounding a bansuri tone: lips at the blowing hole, flute supported](images/start/first-sound-tone.jpg)
+
+Photo: Kannan Shanmugam · [Commons](https://commons.wikimedia.org/wiki/File:Himanshu_nanda_flautist.jpg) · CC BY-SA 4.0
 
       
         - Leave finger holes open at first (fingers hovering). Less to leak.
@@ -97,6 +105,4 @@ Full plan: [practice routine](routine.html).
     
       ## Next
 
-      
-        Secure the hold
-        Breath &amp; long tones
+[Breath & long tones](breath.html)

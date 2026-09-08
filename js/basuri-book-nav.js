@@ -14,18 +14,17 @@
         title: "Start here",
         pages: [
           { label: "Choose a flute", href: "choose.html" },
-          { label: "First sound", href: "first-sound.html" },
-          { label: "Practice routine", href: "routine.html" },
           { label: "Hold & posture", href: "hold.html" },
+          { label: "First sound", href: "first-sound.html" },
           { label: "Breath & long tones", href: "breath.html" },
-          { label: "Layout calculator", href: "make.html" }
+          { label: "Practice routine", href: "routine.html" }
         ]
       },
       {
-        id: "notes",
-        title: "Notes",
+        id: "swaras",
+        title: "Swaras",
         pages: [
-          { label: "Swaras (Sa–Ni)", href: "swaras.html" },
+          { label: "Fingering Charts", href: "swaras.html" },
           { label: "Finger ladder", href: "ladder.html" },
           { label: "Listen", href: "listen.html" },
           { label: "Alankars", href: "alankars.html" },
@@ -44,6 +43,7 @@
         id: "more",
         title: "More",
         pages: [
+          { label: "Layout calculator", href: "make.html" },
           { label: "Resources", href: "resources.html" },
           { label: "Home", href: "index.html" }
         ]

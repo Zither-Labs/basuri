@@ -76,12 +76,27 @@ Tivra Ma is still the fully open (or next full) fingering on that tube’s map.
 
 In Indian music, **Ma** (madhyam) is the only swara that can be raised (sharpened). The others that change are flattened (*komal* Re, Ga, Dha, Ni). Sa and Pa never move.
 
-- **Shuddha Ma** (“plain Ma”) — the natural fourth above Sa (like F if Sa were C). On bansuri it is usually a **half-hole** on the top finger hole: between Ga (one hole closed) and all-open.
-- **Tivra Ma / Ma♯** — the raised fourth (like F♯ if Sa were C). Usual fingering: **all holes open**. Alternate on the bansuriflute.co.uk chart: **top three open, bottom three closed** (`000XXX`).
+- **Shuddha Ma** (“plain Ma”) — the natural fourth above Sa (like F if Sa were C).
+- **Tivra Ma / Ma♯** — the raised fourth (like F♯ if Sa were C). Usual fingering: **all holes open**. Alternate: **top three open, bottom three closed** (`000XXX`).
 
 Shop charts that write **Ma#** mean tivra Ma, not “play a Western sharp key.” If a lesson just says “Ma” without *tivra* / *shuddha*, ask which one — or match the raga.
 
-Beginners often learn all-open as the first “Ma” because half-holing is harder. That note is tivra Ma (Ma♯). Add shuddha Ma later with slow half-cover practice.
+### How to play shuddha Ma
+
+| | Holes (top → bottom) | Action |
+|---|----------------------|--------|
+| **Ga** | ● ○○○○○ | Left index pad seals hole 1 fully |
+| **Shuddha Ma** | ◐ ○○○○○ | Same finger — uncover about half of hole 1 |
+| **Ma♯ (tivra)** | ○○○○○○ | Lift the finger — all open |
+
+1. Start from **Ga**: left index pad fully seals hole 1. Holes 2–6 open.
+2. Keep the same soft air. Slowly **roll or slide** the left index pad so roughly half the hole stays covered and half vents. Do not lift the finger straight off.
+3. Listen against the Sa drone: shuddha Ma is a *perfect fourth* above Sa — lower than all-open Ma♯. Too high → cover more; too low → uncover more.
+4. Lift clear of the hole for **tivra Ma (Ma♯)**. Practice Ga → shuddha Ma → Ma♯ → back slowly.
+
+Right-hand fingers stay off the lower holes for this note. Only the left index is moving. Pad contact is the same skill as on [Hold · Hands](hold.html#hands).
+
+Beginners often learn all-open as the first “Ma” because half-holing is harder. That note is tivra Ma (Ma♯).
 
 ## High register & alternate fingerings
 
@@ -156,4 +171,4 @@ Still put the practice-bar drone on *your* three-hole Sa and train the ear to th
 
 ## Next
 
-[Simple alankars](alankars.html) · [The murali](murali.html)
+[Finger ladder](ladder.html)

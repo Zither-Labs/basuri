@@ -6,14 +6,13 @@
 
       
         
-          - [Choose a flute](choose.html) · [Layout calculator](make.html) (DIY marks)
+          - [Choose a flute](choose.html) · optional [layout calculator](make.html)
+          - [Hold & posture](hold.html)
           - [First sound](first-sound.html) (straw + kiss-and-roll)
-          - [Practice routine](routine.html) (daily plan + real bansuri target tone)
-          - [Hold](hold.html) → [long tones](breath.html)
-          - [Swaras](swaras.html) → [finger ladder](ladder.html) → [listen (tuner)](listen.html) → [alankars](alankars.html) → [songs](songs.html)
-          - [Murali](murali.html) — end-blown (recorder-like) vs side-blown basuri
-          - [Carnatic venu](venu.html) — 8-hole south Indian flute (Sa = top two)
-          - [Layout calculator](make.html) — bamboo / PVC / murali / venu DIY marks
+          - [Breath & long tones](breath.html)
+          - [Practice routine](routine.html) — daily plan for *tone* (not Sa–Re–Ga yet)
+          - [Swaras](swaras.html) → [finger ladder](ladder.html) → [listen](listen.html) → [alankars](alankars.html) → [songs](songs.html)
+          - [Murali](murali.html) · [Carnatic venu](venu.html)
 
         
       

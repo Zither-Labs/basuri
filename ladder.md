@@ -68,4 +68,4 @@ Drill: `S ,N ,D ,P ,D ,N S`
 
 ## Next
 
-[Listen](listen.html) · [Alankars](alankars.html) · [Swaras](swaras.html)
+[Listen](listen.html)

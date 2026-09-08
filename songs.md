@@ -25,4 +25,4 @@ G G G M P · P M G R S
 
 Teaching outlines only — learn full tunes from a singer or teacher.
 
-[Alankars](alankars.html) · [Practice routine](routine.html)
+[Resources](resources.html)

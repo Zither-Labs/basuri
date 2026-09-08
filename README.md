@@ -12,21 +12,19 @@ syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
 
 | Page | Focus |
 |------|--------|
-| [index](index.html) | Landing — first sound + murali |
+| [index](index.html) | Landing — path map |
 | [choose](choose.html) | Picking a starter flute |
-| [make](make.html) | DIY layout calculator — bamboo / PVC / murali / venu |
-| [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
-| [routine](routine.html) | Daily practice plan + target-tone playback |
 | [hold](hold.html) | Posture and hands |
+| [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
 | [breath](breath.html) | Long tones |
-| [swaras](swaras.html) | Sa–Ni map, komal / tivra, high-register alternates |
-| [ladder](ladder.html) | One-finger drills · Sa→Re→Ga→Ma · Pa bridge |
-| [listen](listen.html) | Mic tuner — Hz, Western note, swara vs your Sa |
-| [alankars](alankars.html) | Patterns with real bansuri playback |
-| [songs](songs.html) | Simple sargam tunes with playback |
-| [murali](murali.html) | End-blown bamboo (recorder-like) vs side-blown basuri |
-| [venu](venu.html) | Carnatic / south Indian 8-hole flute — how to play |
-| [resources](resources.html) | Curated free tutors |
+| [routine](routine.html) | Daily plan for *getting a tone* (before named notes) |
+| [swaras](swaras.html) | Sa–Ni fingerings |
+| [ladder](ladder.html) | One finger change at a time |
+| [listen](listen.html) | Mic tuner |
+| [alankars](alankars.html) · [songs](songs.html) | Patterns and tunes |
+| [make](make.html) | DIY layout calculator — bamboo / PVC / murali / venu |
+| [murali](murali.html) · [venu](venu.html) | End-blown / Carnatic cousins |
+| [resources](resources.html) | Links and credits |
 
 Each HTML page has a Markdown twin.
 

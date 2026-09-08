@@ -43,6 +43,50 @@ h3 { font-size: 1.1rem; color: var(--terra); margin: 22px 0 8px; }
   background: var(--panel); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); margin: 16px 0;
 }
+figure.lesson-fig {
+  margin: 18px 0 8px;
+  max-width: 720px;
+}
+figure.lesson-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+figure.lesson-fig.fig-contain img {
+  max-height: none;
+  object-fit: contain;
+  background: var(--panel);
+}
+figure.lesson-fig figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+figure.lesson-fig .credit {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+figure.lesson-fig .credit a { color: var(--muted); text-decoration: underline; }
+.fig-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 16px 0;
+}
+.fig-row figure.lesson-fig {
+  flex: 1 1 280px;
+  margin: 0;
+  max-width: none;
+}
 .note {
   border-left: 5px solid var(--ochre); background: #fbf1da;
   padding: 12px 16px; border-radius: 8px; margin: 16px 0; color: #5a4a34;
@@ -78,6 +122,25 @@ table.fingering th { color: var(--terra); font-weight: 800; }
 }
 .hole.closed { background: var(--ink); }
 .hole.open { background: transparent; }
+/* Half-cover: pad still on the near half, slit open toward the far edge */
+.hole.half {
+  background: linear-gradient(90deg, var(--ink) 52%, transparent 52%);
+}
+.fingering-demo {
+  display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: flex-start;
+  margin: 12px 0 4px;
+}
+.fingering-demo .demo {
+  min-width: 9.5rem;
+}
+.fingering-demo .demo .label {
+  display: block; font-size: 0.82rem; font-weight: 700; color: var(--terra);
+  margin-bottom: 4px;
+}
+.fingering-demo .demo .holes { font-size: 1.15rem; }
+.fingering-demo .demo .hint {
+  display: block; font-size: 0.78rem; color: var(--muted); margin-top: 4px; max-width: 11rem;
+}
 .sy-rooms-foot { margin-top: 0.75rem; font-size: 0.88rem; }
 .sy-rooms-foot a { color: var(--sand, var(--terra)); text-decoration: none; }
 .play-card { margin: 14px 0; }

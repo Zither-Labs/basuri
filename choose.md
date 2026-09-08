@@ -9,6 +9,10 @@
     
       ## Size and key
 
+![A full set of bansuris in many keys](images/start/choose-sizes.jpg)
+
+Photo: Vamsivadrevu · [Commons](https://commons.wikimedia.org/wiki/File:All_scales_of_Bansuris_in_a_set.jpg) · CC BY-SA 4.0
+
       
         **Smaller / higher** flutes need less air and shorter stretch — good for small hands. **Middle C** is the usual adult starter. Long bass flutes are hard for day-one embouchure.
 
@@ -20,6 +24,10 @@
     
     
       ## Six vs seven vs eight holes
+
+![Close-up of a concert-length bamboo bansuri](images/start/choose-instrument.jpg)
+
+Photo: Betelgeuse · [Commons](https://commons.wikimedia.org/wiki/File:Bansuri_bamboo_flute_23inch.jpg) · CC BY-SA 3.0
 
       
         Folk and starter bansuris often have **six** finger holes. Concert Eastern bansuris often add a **seventh** (offset pancham). Either works for first sound. South Indian *venu* (Carnatic) usually has **eight** finger holes and a different Sa map — see [Carnatic venu](venu.html). This room’s default path is the side-blown bansuri / basuri family used across North India and Nepal.
@@ -51,6 +59,4 @@
     
       ## Next
 
-      
-        Make a first sound
-        Hold &amp; posture
+[Hold & posture](hold.html)

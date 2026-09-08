@@ -19,3 +19,7 @@ to show **frequency (Hz)**, Western pitch, and the **swara relative to your Sa**
 - Headphones for drone if the mic hears it.
 
 Pitch analysis runs entirely in the browser (YIN-style). No audio is uploaded.
+
+## Next
+
+[Alankars](alankars.html)

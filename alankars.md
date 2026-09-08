@@ -38,4 +38,4 @@ Press **Play** on the [HTML page](alankars.html) to hear **real bansuri** sample
 3. Clarity before metronome.
 4. High Pa / Dha / Ni forks: [high register & alternates](swaras.html#high).
 
-[Simple songs](songs.html) · [Practice routine](routine.html)
+[Simple songs](songs.html)
