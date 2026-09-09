@@ -18,8 +18,8 @@ syncs this repo to `s3://bikashacharya.com/basuri/` and invalidates CloudFront.
 | [first-sound](first-sound.html) | Straw, kiss-and-roll, troubleshooting silence |
 | [breath](breath.html) | Long tones |
 | [routine](routine.html) | Daily plan for *getting a tone* (before named notes) |
-| [swaras](swaras.html) | Sa–Ni fingerings |
-| [ladder](ladder.html) | One finger change at a time |
+| [ladder](ladder.html) | One hole at a time — Sa→Pa step by step |
+| [swaras](swaras.html) | Fingering charts (reference) |
 | [listen](listen.html) | Mic tuner |
 | [alankars](alankars.html) · [songs](songs.html) | Patterns and tunes |
 | [make](make.html) | DIY layout calculator — bamboo / PVC / murali / venu |

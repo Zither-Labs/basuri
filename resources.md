@@ -11,7 +11,7 @@
           - [First sound](first-sound.html) (straw + kiss-and-roll)
           - [Breath & long tones](breath.html)
           - [Practice routine](routine.html) — daily plan for *tone* (not Sa–Re–Ga yet)
-          - [Swaras](swaras.html) → [finger ladder](ladder.html) → [listen](listen.html) → [alankars](alankars.html) → [songs](songs.html)
+          - [One hole at a time](ladder.html) → [fingering charts](swaras.html) (reference) → [listen](listen.html) → [alankars](alankars.html) → [songs](songs.html)
           - [Murali](murali.html) · [Carnatic venu](venu.html)
 
         

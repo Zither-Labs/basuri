@@ -1,12 +1,12 @@
 > **From theory:** [/theory/eastern/#swara](/theory/eastern/#swara).
 
-# Learn Basuri — Swaras
+# Learn Basuri — Fingering charts
 
-## Swaras (Sa–Ni)
+## Fingering charts
 
-Once you can hold a tone, learn the seven swaras. On the Eastern bansuri,
-**Sa is the top three finger holes covered** (nearest the blowing hole), with the
-lower three open. That is the standard Eastern teaching map — not “all holes closed.”
+Reference map for the seven swaras after you have started [One hole at a time](ladder.md).
+On the Eastern bansuri, **Sa is the top three finger holes covered** (nearest the blowing hole),
+with the lower three open — not “all holes closed.”
 
 ## Fingering chart (6-hole · Sa = three covered)
 
@@ -171,4 +171,4 @@ Still put the practice-bar drone on *your* three-hole Sa and train the ear to th
 
 ## Next
 
-[Finger ladder](ladder.html)
+[Listen](listen.html)

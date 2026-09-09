@@ -24,8 +24,8 @@
         id: "swaras",
         title: "Swaras",
         pages: [
-          { label: "Fingering Charts", href: "swaras.html" },
-          { label: "Finger ladder", href: "ladder.html" },
+          { label: "One hole at a time", href: "ladder.html" },
+          { label: "Fingering charts", href: "swaras.html" },
           { label: "Listen", href: "listen.html" },
           { label: "Alankars", href: "alankars.html" },
           { label: "Simple songs", href: "songs.html" }

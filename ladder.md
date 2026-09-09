@@ -1,9 +1,10 @@
-# Learn Basuri — Finger ladder
+# Learn Basuri — One hole at a time
 
-One finger / one note at a time. After Ma the shape **resets** for Pa.
-Interactive drills: [ladder.html](ladder.html).
+One finger / one note at a time. After Ma the pattern **resets** for Pa.
+Interactive drills: [ladder.html](ladder.html). Full forks and half-holes:
+[fingering charts](swaras.html).
 
-## Ladder map
+## Path map
 
 1. **Sa** — `XXXOOO` · lift nothing  
 2. **Re** — lift hole 3 only → `XXOOOO`  
@@ -14,58 +15,42 @@ Interactive drills: [ladder.html](ladder.html).
 
 Rule: Sa→Re→Ga→Ma = open one more hole from the **top**. Pa is not the next open hole.
 
-## Rung 1 · Sa
+## Step 1 · Sa
 
 Top three closed. Match the drone. Hold ×10.
 
-Drill: `S S S S S`
+## Step 2 · Re
 
-## Rung 2 · Re
+Lift hole 3 only (farthest of the top three).
 
-From Sa, lift only the 3rd-hole finger.
+## Step 3 · Ga
 
-Drills: `S R S R S` · `S S R R S`
+Lift hole 2.
 
-## Rung 3 · Ga
-
-From Re, lift the 2nd-hole finger.
-
-Drills: `S R G R S` · `R G R G R`
-
-## Rung 4 · Ma♯ (tivra)
+## Step 4 · Ma♯ (tivra)
 
 From Ga, lift hole 1 — all open. (Shuddha Ma = half-hole later.)
 
-Drills: `S R G M G R S` · `G M G M G`
+## Step 5 · After Ma → Pa (the bridge)
 
-## Rung 5 · After Ma → Pa (the bridge)
+Stop “opening one more hole.” Pa is a new shape.
 
-**Stop opening holes.** Pick one Pa for a week:
+- Method A: all-closed overblow (`XXXXXX`)
+- Method B: `0XXXXX` (top open, five closed)
 
-| Method | Code | Action |
-|--------|------|--------|
-| A · Teacher fork | `0XXXXX` | Top open, five closed |
-| B · Overblow | `XXXXXX` | All closed, faster air |
-| Soften | half-open top | Easier than full `0XXXXX` |
+Detail: [why these are Pa](swaras.html#pa-fingering).
 
-Drills: `M P M P M` · `S R G M P M G R S`
+## Step 6 · After Pa
 
-## Rung 6 · After Pa
-
-**Method B path** (one finger from the bottom):
-
-- Pa `XXXXXX` → Dha `XXXXXO` → Ni `XXXXOO` → Sa' `XXXOOO` (overblow)
+**Method B path** (one finger from the bottom): open downward for Dha–Ni–Sa' when Pa = `0XXXXX`.
 
 **Method A:** solidify Pa, then switch to B for Dha–Ni–Sa' or use [high register](swaras.html#high) forks.
 
-Drills: `P D N S'` · `S R G M P D N S'`
+## Notes below Sa (optional)
 
-## Below Sa (bonus)
-
-Sa → `,N` `XXXXOO` → `,D` `XXXXXO` → `,P` `XXXXXX` (gentle)
-
-Drill: `S ,N ,D ,P ,D ,N S`
+From Sa, cover more holes downward (one at a time):
+`S ,N ,D ,P ,D ,N S`
 
 ## Next
 
-[Listen](listen.html)
+[Fingering charts](swaras.html)

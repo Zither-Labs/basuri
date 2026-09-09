@@ -1,7 +1,7 @@
 # Learn Basuri — Practice routine
 
 Short daily sessions for **getting a tone**. Named-note drills (Sa–Re–Ga…) wait until
-[Swaras](swaras.md). Interactive: [routine.html](routine.html).
+[One hole at a time](ladder.md). Interactive: [routine.html](routine.html).
 
 ## Goal
 
@@ -10,7 +10,7 @@ Never blow harder when there is no tone. Soft, focused air across the edge.
 ## 1 · Hear the target (1–2 min)
 
 1. Set the practice-bar Sa to a comfortable pitch (Eastern home fingering = top three
-   closed — chart on [Swaras](swaras.html)).
+   closed — chart on [Fingering charts](swaras.html)).
 2. Play Sa sample; hum it; notice the bamboo colour.
 3. Optional: play a short real phrase for colour only.
 
@@ -29,15 +29,15 @@ Max two frustrated minutes — pause, replay Sa, try again.
 Hold 3–5 seconds × ~10. Fingers may stay open at first; then top-three Sa vs drone.
 Pattern: S · S · S · S · S
 
-### D · Named notes — only after Swaras
-Do **not** start Sa–Re–Ga here. Open [Swaras](swaras.html), then the
-[finger ladder](ladder.html). Alankars and songs come after that.
+### D · Named notes — one hole at a time
+Do **not** start Sa–Re–Ga here. Work through [One hole at a time](ladder.html).
+Use [fingering charts](swaras.html) as the reference map. Alankars and songs come after that.
 
 ## 3 · Week map
 
 - **Days 1–3** — A–B only. Success = any pitch under the hiss.
 - **Days 4–7** — Add C; match drone Sa (top three closed).
-- **Week 2** — [Swaras](swaras.html) → [finger ladder](ladder.html) through Pa.
+- **Week 2** — [One hole at a time](ladder.html) through Pa; keep [fingering charts](swaras.html) open for forks.
 - **Week 3+** — [Alankars](alankars.html) · [Songs](songs.html); long tones every day.
 
 ## Still no tone?
@@ -46,4 +46,4 @@ Do **not** start Sa–Re–Ga here. Open [Swaras](swaras.html), then the
 
 ## Next
 
-[Swaras (Sa–Ni)](swaras.html)
+[One hole at a time](ladder.html)
